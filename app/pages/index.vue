@@ -18,8 +18,8 @@
       </div>
 
       <div class="flex items-center gap-4">
-        <button class="text-gray-700 hover:text-gray-900 font-medium">LOG IN</button>
-        <button class="px-6 py-2 border-2 border-gray-900 text-gray-900 rounded hover:bg-gray-900 hover:text-white transition">SIGN UP</button>
+        <NuxtLink to="/auth/login" class="text-gray-700 hover:text-gray-900 font-medium">LOG IN</NuxtLink>
+        <NuxtLink to="/auth/signup" class="px-6 py-2 border-2 border-gray-900 text-gray-900 rounded hover:bg-gray-900 hover:text-white transition">SIGN UP</NuxtLink>
       </div>
     </nav>
 
@@ -370,7 +370,7 @@
 
         <!-- Bottom Footer -->
         <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p class="text-sm text-gray-400">Copyright © 2020 Plivo Inc.</p>
+          <p class="text-sm text-gray-400">Copyright © 2026 Plivo Inc.</p>
           <div class="flex gap-4 mt-4 md:mt-0">
             <a href="#" class="text-gray-400 hover:text-white">𝕏</a>
             <a href="#" class="text-gray-400 hover:text-white">f</a>
