@@ -1,11 +1,391 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-    <div class="text-center text-white">
-      <!-- <h1 class="text-5xl font-bold mb-4">Hello Tailwind! 🎉</h1> -->
-      <p class="text-xl mb-8">Your Nuxt 3 + Tailwind CSS project is ready</p>
-      <button class="bg-white text-blue-500 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
-        Get Started
-      </button>
-    </div>
+  <div>
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-8 py-6 bg-white border-b border-gray-200">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+          <span class="text-white font-bold text-lg">P</span>
+        </div>
+        <span class="text-xl font-bold text-gray-900">plivo</span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Products</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Customers</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Developers</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Resources</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Pricing</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button class="text-gray-700 hover:text-gray-900 font-medium">LOG IN</button>
+        <button class="px-6 py-2 border-2 border-gray-900 text-gray-900 rounded hover:bg-gray-900 hover:text-white transition">SIGN UP</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-20 px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div>
+          <div class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
+            🆕 Zentrunk - A Modern Approach to SIP Trunking →
+          </div>
+
+          <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Connect and engage with your customers globally
+          </h1>
+
+          <p class="text-lg text-gray-600 mb-8">
+            Plivo's voice and messaging platform enables businesses to create and deliver better customer experiences.
+          </p>
+
+          <div class="flex gap-4">
+            <button class="px-8 py-3 bg-blue-900 text-white font-bold rounded hover:bg-blue-800 transition">
+              GET STARTED NOW
+            </button>
+            <button class="px-8 py-3 border-2 border-gray-900 text-gray-900 font-bold rounded hover:bg-gray-900 hover:text-white transition">
+              TALK TO AN EXPERT
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Illustration -->
+        <div class="relative h-96 lg:h-full">
+          <div class="grid grid-cols-2 gap-4 h-full">
+            <div class="bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg p-6 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-4xl mb-2">📱</div>
+                <p class="text-sm text-gray-600">SMS & Voice</p>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-lg p-6 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-4xl mb-2">👥</div>
+                <p class="text-sm text-gray-600">Global Reach</p>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-green-100 to-green-50 rounded-lg p-6 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-4xl mb-2">⚡</div>
+                <p class="text-sm text-gray-600">Real-time API</p>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-lg p-6 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-4xl mb-2">🔐</div>
+                <p class="text-sm text-gray-600">Enterprise Grade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Companies -->
+      <div class="max-w-7xl mx-auto mt-20">
+        <p class="text-center text-gray-600 mb-8">Trusted by leading companies worldwide</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-center">
+          <div class="text-gray-400 font-bold">IBM</div>
+          <div class="text-gray-400 font-bold">GoDaddy</div>
+          <div class="text-gray-400 font-bold">SnapCall</div>
+          <div class="text-gray-400 font-bold">Grayblind</div>
+          <div class="text-gray-400 font-bold">OLA</div>
+          <div class="text-gray-400 font-bold">GOJEK</div>
+          <div class="text-gray-400 font-bold">PagerDuty</div>
+          <div class="text-gray-400 font-bold">Lifesize</div>
+        </div>
+        <p class="text-center text-green-600 mt-8 text-sm">
+          Learn how thousands of innovative businesses rely on Plivo for their customer engagement. →
+        </p>
+      </div>
+    </section>
+
+    <!-- Enterprise Section -->
+    <section class="bg-gray-50 py-16 px-8 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">
+        Enterprise grade communications stack for your business
+      </h2>
+    </section>
+
+    <!-- Products Section -->
+    <section class="bg-white py-16 px-8">
+      <div class="max-w-7xl mx-auto">
+        <!-- PHLO Card -->
+        <div class="bg-gray-50 p-8 rounded-lg mb-8 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-blue-100 rounded flex items-center justify-center">
+              <span class="text-2xl">📋</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">PHLO</h3>
+              <p class="text-gray-600">Drag. Drop. Deploy to manage your communication workflows visually</p>
+            </div>
+          </div>
+          <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <!-- SMS API -->
+          <div class="border border-gray-200 rounded-lg p-8">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">💬</span>
+              <h3 class="text-xl font-bold text-gray-900">SMS API Platform</h3>
+            </div>
+            <p class="text-gray-600 mb-6">
+              Programmatically send and receive text messages in over 190 countries globally.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Voice API -->
+          <div class="border border-gray-200 rounded-lg p-8">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">📞</span>
+              <h3 class="text-xl font-bold text-gray-900">Voice API Platform</h3>
+            </div>
+            <p class="text-gray-600 mb-6">
+              Integrate powerful voice calling functionality within your apps programmatically.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Zentrunk -->
+          <div class="border border-gray-200 rounded-lg p-8">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">☎️</span>
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">Zentrunk</h3>
+                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">NEW</span>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              Cloud based SIP Trunking to make and receive calls with your VoIP infrastructure.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Phone Numbers -->
+          <div class="border border-gray-200 rounded-lg p-8">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">🔢</span>
+              <h3 class="text-xl font-bold text-gray-900">Phone Numbers</h3>
+            </div>
+            <p class="text-gray-600 mb-6">
+              Search and buy local, mobile, and toll-free numbers for your business worldwide.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Templates -->
+    <section class="bg-gray-50 py-16 px-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Explore our solutions templates</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Two-factor Authentication -->
+          <div class="bg-white rounded-lg p-8">
+            <div class="text-4xl mb-4">✓</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Two-factor Authentication</h3>
+            <p class="text-gray-600 mb-6">
+              Secure your applications by authenticating via dynamic verification codes.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Call Tracking -->
+          <div class="bg-white rounded-lg p-8">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Call Tracking</h3>
+            <p class="text-gray-600 mb-6">
+              Measure and track the effectiveness of your online and offline ad campaigns.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Alerts and Notifications -->
+          <div class="bg-white rounded-lg p-8">
+            <div class="text-4xl mb-4">🔔</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Alerts and Notifications</h3>
+            <p class="text-gray-600 mb-6">
+              Send account alerts, dispatch notifications or custom reminders.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Appointment Reminders -->
+          <div class="bg-white rounded-lg p-8">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Appointment Reminders</h3>
+            <p class="text-gray-600 mb-6">
+              Reduce no-shows by sending SMS reminders from your system.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- Call Forwarding -->
+          <div class="bg-white rounded-lg p-8">
+            <div class="text-4xl mb-4">📞</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Call Forwarding</h3>
+            <p class="text-gray-600 mb-6">
+              Forward calls to another phone, like your home or office number.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+
+          <!-- SMS Marketing -->
+          <div class="bg-white rounded-lg p-8">
+            <div class="text-4xl mb-4">📢</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">SMS Marketing</h3>
+            <p class="text-gray-600 mb-6">
+              Drive your customer engagement with SMS based campaigns.
+            </p>
+            <a href="#" class="text-green-600 font-medium hover:underline">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Plivo -->
+    <section class="bg-white py-16 px-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Top reasons why businesses choose Plivo</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Proven Quality -->
+          <div>
+            <div class="text-6xl mb-4">⭐</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Proven Quality and Scale</h3>
+            <p class="text-gray-600">
+              With over a billion API requests every month, our globally distributed direct to carrier network and intelligent routing ensures highest SMS delivery and lowest latency for your calls.
+            </p>
+          </div>
+
+          <!-- Enterprise Grade -->
+          <div>
+            <div class="text-6xl mb-4">✓</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Enterprise Grade Platform</h3>
+            <p class="text-gray-600">
+              Engineered for high availability, extreme reliability and 99.95% uptime SLA. Privacy Shield and GDPR Compliance means any business can trust Plivo with data privacy and security.
+            </p>
+          </div>
+
+          <!-- Support Team -->
+          <div>
+            <div class="text-6xl mb-4">🎧</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">A Team That Truly Cares about Your Success</h3>
+            <p class="text-gray-600">
+              Our 24x7 premium support and a consultative customer success team, provide you with all the technical guidance and industry expertise you need, when you need it.
+            </p>
+          </div>
+
+          <!-- Lower Cost -->
+          <div>
+            <div class="text-6xl mb-4">💰</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Lower Cost of Ownership</h3>
+            <p class="text-gray-600">
+              Receive discounted pricing from the start with simple usage based pricing where you only pay for what you use. Avail additional discounts with committed usage as you scale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white py-20 px-8 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">It's easy to get started. Sign up for free.</h2>
+        <p class="text-lg text-gray-600 mb-8">
+          Create your account and receive trial credits or get in touch with us
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="px-8 py-3 bg-green-600 text-white font-bold rounded hover:bg-green-700 transition">
+            GET STARTED NOW
+          </button>
+          <button class="px-8 py-3 border-2 border-green-600 text-green-600 font-bold rounded hover:bg-green-600 hover:text-white transition">
+            TALK TO AN EXPERT
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <!-- Products -->
+          <div>
+            <h4 class="font-bold mb-4 text-gray-300">PRODUCTS</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="#" class="hover:text-white">SMS API Platform</a></li>
+              <li><a href="#" class="hover:text-white">Voice API Platform</a></li>
+              <li><a href="#" class="hover:text-white">Zentrunk</a></li>
+              <li><a href="#" class="hover:text-white">Phone Numbers</a></li>
+              <li><a href="#" class="hover:text-white">PHLO</a></li>
+              <li><a href="#" class="hover:text-white">Pricing</a></li>
+            </ul>
+          </div>
+
+          <!-- Developers -->
+          <div>
+            <h4 class="font-bold mb-4 text-gray-300">DEVELOPERS</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="#" class="hover:text-white">Knowledge Base</a></li>
+              <li><a href="#" class="hover:text-white">Service Status</a></li>
+              <li><a href="#" class="hover:text-white">Documentation</a></li>
+              <li><a href="#" class="hover:text-white">Server-Side SDKs</a></li>
+              <li><a href="#" class="hover:text-white">Client-Side SDKs</a></li>
+              <li><a href="#" class="hover:text-white">Detailed Reference</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div>
+            <h4 class="font-bold mb-4 text-gray-300">RESOURCES</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="#" class="hover:text-white">Blog</a></li>
+              <li><a href="#" class="hover:text-white">Webinars</a></li>
+              <li><a href="#" class="hover:text-white">Whitepaper</a></li>
+              <li><a href="#" class="hover:text-white">Twilio Alternative</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div>
+            <h4 class="font-bold mb-4 text-gray-300">COMPANY</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="#" class="hover:text-white">About</a></li>
+              <li><a href="#" class="hover:text-white">Customers</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Brand Guidelines</a></li>
+              <li><a href="#" class="hover:text-white">Contact Sales</a></li>
+              <li><a href="#" class="hover:text-white">Legal</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-sm text-gray-400">Copyright © 2020 Plivo Inc.</p>
+          <div class="flex gap-4 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-white">𝕏</a>
+            <a href="#" class="text-gray-400 hover:text-white">f</a>
+            <a href="#" class="text-gray-400 hover:text-white">in</a>
+            <a href="#" class="text-gray-400 hover:text-white">⚙️</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
+
+<script setup>
+
+</script>
+
+<style scoped>
+</style>
