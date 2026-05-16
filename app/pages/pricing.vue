@@ -14,7 +14,7 @@
       </div>
 
       <div class="max-w-3xl mx-auto relative z-10">
-        <h1 class="text-5xl font-bold text-blue-900 mb-6">Plivo Pricing</h1>
+        <h1 class="text-5xl font-bold text-blue-900 mb-6">Flowdacity Pricing</h1>
         <p class="text-lg text-gray-600 mb-2">
           Start with our competitive pay as you go pricing. For deeper discounts on
         </p>
@@ -48,22 +48,23 @@
               <h3 class="text-2xl font-bold text-gray-900">SMS API Platform</h3>
             </div>
 
-            <div class="space-y-8">
+            <div class="space-y-8 flex flex-col">
               <!-- Send SMS -->
-              <div>
+             <div class="flex justify-between items-center">
+                 <div>
                 <p class="text-sm font-semibold text-gray-600 uppercase mb-2">TO SEND AN SMS</p>
                 <p class="text-4xl font-bold text-gray-900">
                   <span class="text-2xl">$</span>0.0050<span class="text-lg">/sms</span>
                 </p>
               </div>
 
-              <!-- Receive SMS -->
               <div>
                 <p class="text-sm font-semibold text-gray-600 uppercase mb-2">TO RECEIVE AN SMS</p>
                 <p class="text-4xl font-bold text-gray-900">
                   <span class="text-2xl">$</span>0.0000<span class="text-lg">/sms</span>
                 </p>
               </div>
+             </div>
 
               <button class="w-full border-2 border-green-600 text-green-600 font-bold py-3 rounded hover:bg-green-50 transition uppercase">
                 VIEW DETAILED PRICING
@@ -79,8 +80,8 @@
             </div>
 
             <div class="space-y-8">
-              <!-- Make Call -->
-              <div>
+              <div class="flex justify-between items-center">
+                <div>
                 <p class="text-sm font-semibold text-gray-600 uppercase mb-2">TO MAKE A CALL</p>
                 <p class="text-sm text-gray-500 mb-1">Starts at</p>
                 <p class="text-4xl font-bold text-gray-900">
@@ -94,6 +95,7 @@
                 <p class="text-4xl font-bold text-gray-900">
                   <span class="text-2xl">$</span>0.0085<span class="text-lg">/min</span>
                 </p>
+              </div>
               </div>
 
               <button class="w-full border-2 border-green-600 text-green-600 font-bold py-3 rounded hover:bg-green-50 transition uppercase">
@@ -113,7 +115,8 @@
             </div>
 
             <div class="space-y-6">
-              <!-- Make Call -->
+              <div class="flex justify-between items-center">
+                <!-- Make Call -->
               <div>
                 <p class="text-sm font-semibold text-gray-600 uppercase mb-2">TO MAKE A CALL</p>
                 <p class="text-sm text-gray-500 mb-1">Starts at</p>
@@ -128,6 +131,7 @@
                 <p class="text-4xl font-bold text-gray-900">
                   <span class="text-2xl">$</span>0.0025<span class="text-lg">/min</span>
                 </p>
+              </div>
               </div>
 
               <button class="w-full border-2 border-green-600 text-green-600 font-bold py-3 rounded hover:bg-green-50 transition uppercase">
@@ -145,7 +149,8 @@
 
             <div class="space-y-6">
               <!-- Local Numbers -->
-              <div>
+              <div class="flex justify-between items-center">
+                <div>
                 <p class="text-sm font-semibold text-gray-600 uppercase mb-2">LOCAL NUMBERS</p>
                 <p class="text-4xl font-bold text-gray-900">
                   <span class="text-2xl">$</span>0.80<span class="text-lg">/month</span>
@@ -167,6 +172,7 @@
                 <p class="text-4xl font-bold text-gray-900">
                   <span class="text-2xl">$</span>500<span class="text-lg">/month</span>
                 </p>
+              </div>
               </div>
 
               <button class="w-full border-2 border-green-600 text-green-600 font-bold py-3 rounded hover:bg-green-50 transition uppercase">
