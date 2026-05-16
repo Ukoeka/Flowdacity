@@ -1,14 +1,8 @@
 <template>
-  <div class="bg-white">
+ <Layout>
+     <div class="bg-white">
     <!-- Header with Logo -->
-    <nav class="flex items-center justify-between px-8 py-6 border-b border-gray-200">
-      <div class="flex items-center gap-2">
-        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-          <span class="text-white font-bold text-lg">P</span>
-        </div>
-        <span class="text-xl font-bold text-gray-900">plivo</span>
-      </div>
-    </nav>
+    
 
     <!-- Hero Section -->
     <section class="py-20 px-8 text-center relative overflow-hidden">
@@ -310,12 +304,12 @@
       </div>
     </section>
   </div>
+ </Layout>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-
-// Component state can be added here if needed
+import Layout from '../components/Layout.vue'
 </script>
 
 <style scoped>
