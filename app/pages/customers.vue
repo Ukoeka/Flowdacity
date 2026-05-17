@@ -168,40 +168,7 @@
           </div>
         </div>
 
-        <!-- More Companies -->
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 mb-12 items-center justify-center">
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-green-600">PagerDuty</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-red-600">Ninja Van</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-gray-400">Greyhound</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-sm font-bold text-blue-600">CallTrackingMetrics</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-red-600">Mars</span>
-          </div>
-
-          <div class="flex items-center justify-center p-4">
-            <span class="text-xl font-bold text-gray-900">WIX.com</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-sm font-bold text-green-600">tokopedia</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-red-600">zynga</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-yellow-600">YODLEE</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-purple-600">homebase</span>
-          </div>
-        </div>
+      
       </div>
     </section>
 
@@ -249,40 +216,7 @@
           </div>
         </div>
 
-        <!-- More Companies Row -->
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-center">
-          <div class="flex items-center justify-center p-4">
-            <span class="text-sm font-bold text-blue-600">Experian</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-sm font-bold text-purple-900">University of Washington</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-green-600">ReadyTalk</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-orange-600">Payoneer</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-sm font-bold text-purple-600">BYJU'S</span>
-          </div>
-
-          <div class="flex items-center justify-center p-4">
-            <span class="text-sm font-bold text-gray-900">Approved</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-sm font-bold text-blue-600">FSM</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-gray-900">zumiez</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-red-600">kanopy</span>
-          </div>
-          <div class="flex items-center justify-center p-4">
-            <span class="text-lg font-bold text-gray-900">wickr</span>
-          </div>
-        </div>
+       
       </div>
     </section>
 
