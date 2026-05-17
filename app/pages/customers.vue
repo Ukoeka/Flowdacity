@@ -4,9 +4,9 @@
     <nav class="flex items-center justify-between px-8 py-6 border-b border-gray-200">
       <div class="flex items-center gap-2">
         <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-          <span class="text-white font-bold text-lg">P</span>
+          <span class="text-white font-bold text-lg">F</span>
         </div>
-        <span class="text-xl font-bold text-gray-900">plivo</span>
+        <span class="text-xl font-bold text-gray-900">Flowdacity</span>
       </div>
     </nav>
 
@@ -15,7 +15,7 @@
       <div class="max-w-7xl mx-auto">
         <h1 class="text-5xl font-bold text-center text-blue-900 mb-4">You are in good company</h1>
         <p class="text-center text-gray-600 text-lg mb-16">
-          Join thousands of businesses that rely on Plivo for their business communications.
+          Join thousands of businesses that rely on Flowdacity for their business communications.
         </p>
 
         <!-- Companies Grid -->
@@ -106,7 +106,7 @@
           <div>
             <h2 class="text-3xl font-bold text-gray-900 mb-4">DECKERS BRANDS</h2>
             <h3 class="text-2xl font-semibold text-gray-900 mb-6">
-              Deckers and Plivo are a Perfect Pair When it Comes to the Customer Experiences
+              Deckers and Flowdacity are a Perfect Pair When it Comes to the Customer Experiences
             </h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Deckers is a global footwear giant offering a portfolio of well-known brands, including UGG, Hoka One One, Sanuk, Teva, & Koolaburra. The difference they make in people's lives begins with a belief in creating a new kind of footwear to improve daily lives.
@@ -301,7 +301,7 @@
               Luxer One ensures special occasions remain special with prompt package notifications
             </h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
-              Luxer One is a pioneer in package lockers and delivery solutions for apartments, retailers, offices, and universities. With Plivo SMS, they ensures no package gets lost in transit and no special occasion get ruined.
+              Luxer One is a pioneer in package lockers and delivery solutions for apartments, retailers, offices, and universities. With Flowdacity SMS, they ensures no package gets lost in transit and no special occasion get ruined.
             </p>
             <div>
               <p class="text-sm font-semibold text-gray-600 uppercase mb-2">ONE TIME PASSWORD | SMS NOTIFICATIONS</p>
@@ -329,7 +329,7 @@
           <!-- Quote 2 -->
           <div class="bg-white rounded-lg p-8 shadow-sm">
             <p class="text-gray-600 mb-6 italic">
-              "I am a developer and it took me all of 5 minutes to setup Plivo in my PHP project - it was amazingly simple!"
+              "I am a developer and it took me all of 5 minutes to setup Flowdacity in my PHP project - it was amazingly simple!"
             </p>
             <p class="text-sm text-gray-600">- Jesal B</p>
           </div>
