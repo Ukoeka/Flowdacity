@@ -1,14 +1,8 @@
 <template>
-  <div class="bg-white">
-    <!-- Header with Logo -->
-    <nav class="flex items-center justify-between px-8 py-6 border-b border-gray-200">
-      <div class="flex items-center gap-2">
-        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-          <span class="text-white font-bold text-lg">F</span>
-        </div>
-        <span class="text-xl font-bold text-gray-900">Flowdacity</span>
-      </div>
-    </nav>
+  <Layout>
+    <div class="bg-white">
+      <div class="bg-white">
+
 
     <!-- Companies Section -->
     <section class="py-20 px-8 bg-white">
@@ -279,12 +273,13 @@
       </div>
     </section>
   </div>
+    </div>
+  </Layout>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-
-// Component state can be added here if needed
+import Layout from '~/components/Layout.vue';
 </script>
 
 <style scoped>
