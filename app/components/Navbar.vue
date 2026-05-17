@@ -1,10 +1,10 @@
 <template>
-  <nav class="flex items-center justify-between px-8 py-6 bg-white border-b border-gray-200">
+  <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-white border-b border-gray-200 shadow">
     <div class="flex items-center gap-2">
       <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-        <span class="text-white font-bold text-lg">F</span>
+        <span class="text-white font-bold text-lg">P</span>
       </div>
-      <span class="text-xl font-bold text-gray-900">Flowdacity</span>
+      <span class="text-xl font-bold text-gray-900">plivo</span>
     </div>
 
     <div class="hidden md:flex items-center gap-8">
@@ -21,3 +21,10 @@
     </div>
   </nav>
 </template>
+
+<script setup>
+
+</script>
+
+<style scoped>
+</style>

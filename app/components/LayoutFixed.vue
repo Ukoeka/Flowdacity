@@ -1,9 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <div class="pt-16 md:pt-20">
-      <slot />
-    </div>
+    <slot />
     <Footer />
   </div>
 </template>
