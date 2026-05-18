@@ -26,14 +26,30 @@
 
       <!-- Country Selector -->
       <div class="max-w-3xl mx-auto mt-12">
-        <div class="inline-block w-full sm:w-80">
-          <div class="flex items-center gap-3 px-6 py-3 border border-gray-300 rounded-lg bg-white hover:border-gray-400 cursor-pointer">
-            <span class="text-2xl">🇺🇸</span>
-            <span class="text-gray-700 font-medium">United States</span>
-            <span class="ml-auto">▼</span>
-          </div>
-        </div>
+  <div class="inline-block w-full sm:w-80">
+    <div class="relative">
+      <!-- Standard Select Dropdown -->
+      <select 
+        class="block w-full px-6 py-3 text-gray-700 font-medium bg-white border border-gray-300 rounded-lg appearance-none cursor-pointer focus:outline-none focus:border-blue-500 hover:border-gray-400"
+      >
+        <option value="" disabled selected>Select a country</option>
+        <!-- Populating from countryList -->
+        <option 
+          v-for="country in countryList" 
+          :key="country" 
+          :value="country"
+        >
+          {{ country }}
+        </option>
+      </select>
+      
+      <!-- Custom Arrow Icon (Since appearance-none hides the default one) -->
+      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-6 text-gray-500">
+        <span>▼</span>
       </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <!-- Pricing Cards Section -->
@@ -206,7 +222,7 @@
           <!-- Testimonial 1 -->
           <div class="bg-white rounded-lg p-8 shadow-sm">
             <p class="text-gray-600 mb-6 leading-relaxed">
-              "I could tell from the get-go that Plivo was going to offer outstanding service."
+              "I could tell from the get-go that Flowdacity was going to offer outstanding service."
             </p>
             <div>
               <p class="font-bold text-gray-900">DECKERS</p>
@@ -218,7 +234,7 @@
           <!-- Testimonial 2 -->
           <div class="bg-white rounded-lg p-8 shadow-sm">
             <p class="text-gray-600 mb-6 leading-relaxed">
-              "The core of our workflow is Plivo's webhook on incoming calls, adding some metadata on our end, and then redirecting. It was just so easy to implement, and made Plivo a clear winner over any other competition."
+              "The core of our workflow is Flowdacity's webhook on incoming calls, adding some metadata on our end, and then redirecting. It was just so easy to implement, and made Flowdacity a clear winner over any other competition."
             </p>
             <div>
               <p class="font-bold text-gray-900">HOUST</p>
@@ -229,7 +245,7 @@
           <!-- Testimonial 3 -->
           <div class="bg-white rounded-lg p-8 shadow-sm">
             <p class="text-gray-600 mb-6 leading-relaxed">
-              "The service reports are very informative. The check-ins let us know that we're a valued partner, and that really makes us feel good about our decision to use Plivo."
+              "The service reports are very informative. The check-ins let us know that we're a valued partner, and that really makes us feel good about our decision to use Flowdacity."
             </p>
             <div>
               <p class="font-bold text-gray-900">GUESTFM</p>
@@ -247,11 +263,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div class="space-y-8">
             <details class="border rounded-lg p-4 bg-white shadow-sm">
-              <summary class="font-semibold text-gray-900 cursor-pointer">Can I try Plivo's products for free?</summary>
+              <summary class="font-semibold text-gray-900 cursor-pointer">Can I try Flowdacity's products for free?</summary>
               <p class="text-gray-600 mt-2">Yes, we do provide free credits for you to try our products. <a href="#" class="text-green-600 font-semibold">Sign up</a> with your work email to redeem your free credits and build your application.</p>
             </details>
             <details class="border rounded-lg p-4 bg-white shadow-sm">
-              <summary class="font-semibold text-gray-900 cursor-pointer">Do you have example applications built using Plivo?</summary>
+              <summary class="font-semibold text-gray-900 cursor-pointer">Do you have example applications built using Flowdacity?</summary>
               <p class="text-gray-600 mt-2">Check out our <a href="#" class="text-green-600 hover:text-green-700 font-semibold">developer docs</a> for example applications in various different languages. If you need any further help check out our detailed <a href="#" class="text-green-600 hover:text-green-700 font-semibold">knowledgebase</a>.</p>
             </details>
             <details class="border rounded-lg p-4 bg-white shadow-sm">
@@ -269,7 +285,7 @@
               <p class="text-gray-600 mt-2">Each SMS is charged per unit sent or received. Voice Calls are charged per minute for each call made or received. Phone Numbers are charged a monthly rental fee at the start of the month.</p>
             </details>
             <details class="border rounded-lg p-4 bg-white shadow-sm">
-              <summary class="font-semibold text-gray-900 cursor-pointer">Is my data safe with Plivo?</summary>
+              <summary class="font-semibold text-gray-900 cursor-pointer">Is my data safe with Flowdacity ?</summary>
               <p class="text-gray-600 mt-2">We take data security and privacy as our top priority. As an example, we are compliant with GDPR, CCPA, and privacy shield. For more details see our Terms and Privacy Policy.</p>
             </details>
           </div>
@@ -283,6 +299,9 @@
 <script setup>
 import { ref } from 'vue'
 import Layout from '../components/Layout.vue'
+
+const { $countries } = useNuxtApp()
+const countryList = $countries.getNames('en')
 </script>
 
 <style scoped>
