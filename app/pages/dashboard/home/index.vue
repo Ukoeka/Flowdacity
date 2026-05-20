@@ -210,8 +210,8 @@
 
 <script setup>
 import NavItem from './components/dashboard/NavItem.vue'
-import UsageCard from './components/UsageCard.vue'
-import ShortcutItem from './components/ShortcutItem.vue'
+import UsageCard from './components/dashboard/UsageCard.vue'
+import ShortcutItem from './components/dashboard/ShortcutItem.vue'
 </script>
 
 <style scoped>
