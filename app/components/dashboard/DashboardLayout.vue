@@ -14,20 +14,20 @@
 
       <!-- Navigation -->
       <nav class="p-4 space-y-1">
-        <button
+        <NuxtLink
           v-for="(item, index) in navigationItems"
           :key="index"
-          @click="setActive(index)"
+          :to="item.to"
           :class="[
             'w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors',
-            item.active
+            isActive(item)
               ? 'bg-gray-100 text-gray-900 border-l-4 border-purple-600'
               : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
           ]"
         >
           <span class="text-lg">{{ item.icon }}</span>
           <span>{{ item.label }}</span>
-        </button>
+        </NuxtLink>
       </nav>
     </div>
 
@@ -59,41 +59,36 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 
-const activeIndex = ref(0)
+const route = useRoute()
 
-const navigationItems = ref([
-  { icon: '🏠', label: 'Home', active: true },
-  { icon: '📹', label: 'Video', active: false },
-  { icon: '📱', label: 'Phone Numbers', active: false },
-  { icon: '🔄', label: 'Relay / SWML', active: false },
-  { icon: '☎️', label: 'SIP', active: false },
-  { icon: '💬', label: 'cXML / LaML', active: false },
-  { icon: '📢', label: 'Messaging Campaigns', active: false },
-  { icon: '🤖', label: 'AI Agents', active: false },
-  { icon: '🔀', label: 'Dialogflow', active: false },
-  { icon: '🔗', label: 'Integrations', active: false },
-  { icon: '☁️', label: 'API', active: false },
-  { icon: '📊', label: 'Usage', active: false },
-  { icon: '📞', label: 'Call Flow Builder', active: false },
-  { icon: '📈', label: 'Analytics', active: false },
-  { icon: '📋', label: 'Logs', active: false },
-  { icon: '💾', label: 'Storage', active: false },
-  { icon: '⚙️', label: 'Configuration', active: false },
-  { icon: '🛠️', label: 'Tools', active: false },
-])
+const navigationItems = [
+  { icon: '🏠', label: 'Home', to: '/dashboard/home' },
+  { icon: '📹', label: 'Video', to: '/dashboard/video' },
+  { icon: '📱', label: 'Phone Numbers', to: '/dashboard/phone-numbers' },
+  { icon: '🔄', label: 'Relay / SWML', to: '/dashboard/relay' },
+  { icon: '☎️', label: 'SIP', to: '/dashboard/sip' },
+  { icon: '💬', label: 'cXML / LaML', to: '/dashboard/cxml' },
+  { icon: '📢', label: 'Messaging Campaigns', to: '/dashboard/messaging' },
+  { icon: '🤖', label: 'AI Agents', to: '/dashboard/ai-agents' },
+  { icon: '🔀', label: 'Dialogflow', to: '/dashboard/dialogflow' },
+  { icon: '🔗', label: 'Integrations', to: '/dashboard/integrations' },
+  { icon: '☁️', label: 'API', to: '/dashboard/api' },
+  { icon: '📊', label: 'Usage', to: '/dashboard/usage' },
+  { icon: '📞', label: 'Call Flow Builder', to: '/dashboard/call-flow' },
+  { icon: '📈', label: 'Analytics', to: '/dashboard/analytics' },
+  { icon: '📋', label: 'Logs', to: '/dashboard/logs' },
+  { icon: '💾', label: 'Storage', to: '/dashboard/storage' },
+  { icon: '⚙️', label: 'Configuration', to: '/dashboard/configuration' },
+  { icon: '🛠️', label: 'Tools', to: '/dashboard/tools' },
+]
 
-const setActive = (index) => {
-  navigationItems.value.forEach((item, i) => {
-    item.active = i === index
-  })
-  activeIndex.value = index
+const isActive = (item) => {
+  if (!item.to) return false
+  if (item.to === '/dashboard/video') {
+    return route.path.startsWith('/dashboard/video')
+  }
+  return route.path === item.to
 }
 </script>
-
-<style scoped>
-button {
-  transition-duration: 150ms;
-}
-</style>
