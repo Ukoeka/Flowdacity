@@ -1,5 +1,5 @@
 <template>
-  <div class="w-56 bg-white border-r border-gray-200 overflow-y-auto fixed h-screen">
+  <div class="w-120px bg-white border-r border-gray-200 overflow-y-auto fixed h-screen">
     <!-- Logo -->
     <div class="p-6 border-b border-gray-200">
       <div class="flex items-center gap-2">

@@ -4,7 +4,7 @@
     <Sidebar />
 
     <!-- Main Content -->
-    <div class="ml-56 flex-1 flex flex-col">
+    <div class="ml-120 flex-1 flex flex-col">
       <!-- Top Bar -->
       <div class="bg-white border-b border-gray-200 px-8 py-4 flex items-center justify-between sticky top-0 z-10 h-16">
         <div class="flex items-center gap-3">
