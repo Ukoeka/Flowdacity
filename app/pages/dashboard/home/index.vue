@@ -1,30 +1,6 @@
 <template>
-  <div class="flex h-screen bg-gray-50">
-    <!-- Sidebar -->
-    <Sidebar />
-
-    <!-- Main Content -->
-    <div class="ml-120 flex-1 flex flex-col">
-      <!-- Top Bar -->
-      <div class="bg-white border-b border-gray-200 px-8 py-4 flex items-center justify-between sticky top-0 z-10 h-16">
-        <div class="flex items-center gap-3">
-          <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M5.5 13a3 3 0 0 0 1.6.8H8c.07 0 .14-.01.21-.03A1.01 1.01 0 0 0 9 13v-1H3v1c0 .55.448 1 1 1h1.5z" />
-            <path d="M14 4c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1h-1V5c0-.55.45-1 1-1zm-4 0c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1H9V5c0-.55.45-1 1-1zm4 12H9v2h5v-2z" />
-          </svg>
-          <span class="text-gray-700 font-medium">Flowdacity</span>
-        </div>
-        <div class="flex items-center gap-6">
-          <button class="text-gray-600 hover:text-gray-900 text-sm font-medium">Changelog</button>
-          <button class="text-gray-600 hover:text-gray-900 text-sm font-medium">Support</button>
-          <button class="text-gray-600 hover:text-gray-900 text-sm font-medium">Docs</button>
-          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-purple-500"></div>
-        </div>
-      </div>
-
-      <!-- Scrollable Content -->
-      <div class="flex-1 overflow-y-auto">
-        <div class="p-8 w-full">
+  <DashboardLayout>
+    <div class="p-8 w-full">
           <!-- Charts Section -->
           <div class="mb-12">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
@@ -171,14 +147,11 @@
             <a href="#" class="hover:text-gray-900">Cookie Policy</a>
           </div>
         </footer>
-      </div>
-    </div>
-  </div>
+  </DashboardLayout>
 </template>
 
 <script setup>
-import Sidebar from '@/components/dashboard/Sidebar.vue'
-// import NavItem from '@/components/dashboard/NavItem.vue'
+import DashboardLayout from '@/components/dashboard/DashboardLayout.vue'
 import UsageCard from '@/components/dashboard/UsageCard.vue'
 import ShortcutItem from '@/components/dashboard/ShortCut.vue'
 </script>
