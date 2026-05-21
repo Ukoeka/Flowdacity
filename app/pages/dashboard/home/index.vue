@@ -1,39 +1,7 @@
 <template>
   <div class="flex h-screen bg-gray-50">
     <!-- Sidebar -->
-    <div class="w-56 bg-white border-r border-gray-200 overflow-y-auto fixed h-screen">
-      <!-- Logo -->
-      <div class="p-6 border-b border-gray-200">
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-            <span class="text-white font-bold text-sm">⚡</span>
-          </div>
-          <span class="font-bold text-lg text-gray-900">Flowdacity</span>
-        </div>
-      </div>
-
-      <!-- Navigation -->
-      <nav class="p-4 space-y-1">
-        <NavItem icon="🏠" label="Home" :active="true" />
-        <NavItem icon="📹" label="Video" />
-        <NavItem icon="📱" label="Phone Numbers" />
-        <NavItem icon="🔄" label="Relay / SWML" />
-        <NavItem icon="☎️" label="SIP" />
-        <NavItem icon="💬" label="cXML / LaML" />
-        <NavItem icon="📢" label="Messaging Campaigns" />
-        <NavItem icon="🤖" label="AI Agents" />
-        <NavItem icon="🔀" label="Dialogflow" />
-        <NavItem icon="🔗" label="Integrations" />
-        <NavItem icon="☁️" label="API" />
-        <NavItem icon="📊" label="Usage" />
-        <NavItem icon="📞" label="Call Flow Builder" />
-        <NavItem icon="📈" label="Analytics" />
-        <NavItem icon="📋" label="Logs" />
-        <NavItem icon="💾" label="Storage" />
-        <NavItem icon="⚙️" label="Configuration" />
-        <NavItem icon="🛠️" label="Tools" />
-      </nav>
-    </div>
+    <Sidebar />
 
     <!-- Main Content -->
     <div class="ml-56 flex-1 flex flex-col">
@@ -56,7 +24,7 @@
 
       <!-- Scrollable Content -->
       <div class="flex-1 overflow-y-auto">
-        <div class="p-8 max-w-7xl">
+        <div class="p-8 w-full">
           <!-- Charts Section -->
           <div class="mb-12">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
@@ -209,9 +177,10 @@
 </template>
 
 <script setup>
-import NavItem from './components/dashboard/NavItem.vue'
-import UsageCard from './components/dashboard/UsageCard.vue'
-import ShortcutItem from './components/dashboard/ShortcutItem.vue'
+import Sidebar from '@/components/dashboard/Sidebar.vue'
+// import NavItem from '@/components/dashboard/NavItem.vue'
+import UsageCard from '@/components/dashboard/UsageCard.vue'
+import ShortcutItem from '@/components/dashboard/ShortCut.vue'
 </script>
 
 <style scoped>
