@@ -169,6 +169,7 @@ const navigationItems = [
   children: [
     { label: 'Verified', to: '/dashboard/phone-numbers/verified' },
     { label: 'Short Codes', to: '/dashboard/phone-numbers/shortcodes' },
+    { label: 'Port Requests', to: '/dashboard/phone-numbers/port-requests' },
   ]
  },
   {

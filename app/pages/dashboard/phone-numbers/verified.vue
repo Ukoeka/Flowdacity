@@ -80,47 +80,64 @@
       </div>
 
       <div class="mt-24 pt-8 border-t border-gray-100">
-        <div class="flex items-center gap-4 mb-6">
-          <div class="bg-blue-100 px-3 py-1 rounded text-blue-700 text-sm font-bold flex items-center gap-1">
-            Developer Docs <span class="text-lg">›</span>
-          </div>
-          <button class="text-blue-600 text-sm font-medium flex items-center gap-1">
-            <span class="text-lg">❓</span> Help
+        <div class="flex items-center gap-4 mb-8">
+          <button 
+            @click="isDocsOpen = !isDocsOpen"
+            class="flex items-center gap-2 bg-gray-50 border border-gray-200 px-4 py-1.5 rounded-lg text-gray-700 font-bold text-sm hover:bg-gray-100 transition shadow-sm group"
+          >
+            Developer Docs 
+            <span :class="['text-blue-600 transition-transform duration-300 text-lg', isDocsOpen ? 'rotate-90' : '']">›</span>
+          </button>
+          
+          <button class="text-blue-600 text-sm font-medium flex items-center gap-1 hover:underline">
+             <span class="text-lg">❓</span> Help
           </button>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div>
-            <h4 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <span class="text-gray-400">📋</span> Guides
-            </h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-blue-600 hover:underline text-sm">Getting Started with Phone Numbers</a></li>
-              <li><a href="#" class="text-blue-600 hover:underline text-sm">Making and Receiving Phone Calls</a></li>
-              <li><a href="#" class="text-blue-600 hover:underline text-sm">Making and Receiving SMS</a></li>
-            </ul>
-          </div>
+        <transition
+          enter-active-class="transition-all duration-300 ease-out"
+          leave-active-class="transition-all duration-200 ease-in"
+          enter-from-class="opacity-0 -translate-y-4 max-h-0"
+          enter-to-class="opacity-100 translate-y-0 max-h-[1000px]"
+          leave-from-class="opacity-100 translate-y-0 max-h-[1000px]"
+          leave-to-class="opacity-0 -translate-y-4 max-h-0"
+        >
+          <div v-if="isDocsOpen" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-2xl">📋</span>
+                <h4 class="font-bold text-gray-900">Guides</h4>
+              </div>
+              <ul class="space-y-3 text-sm">
+                <li><a href="#" class="text-blue-600 hover:underline block">Getting Started with Phone Numbers</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline block">Making and Receiving Phone Calls</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline block">Making and Receiving SMS</a></li>
+              </ul>
+            </div>
 
-          <div>
-            <h4 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <span class="text-gray-400">💻</span> SDK Reference
-            </h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-blue-600 hover:underline text-sm">RELAY Realtime SDK</a></li>
-              <li><a href="#" class="text-blue-600 hover:underline text-sm">Compatibility SDK</a></li>
-            </ul>
-          </div>
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-2xl">💻</span>
+                <h4 class="font-bold text-gray-900">SDK Reference</h4>
+              </div>
+              <ul class="space-y-3 text-sm">
+                <li><a href="#" class="text-blue-600 hover:underline block">RELAY Realtime SDK</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline block">Compatibility SDK</a></li>
+              </ul>
+            </div>
 
-          <div>
-            <h4 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <span class="text-gray-400">🔗</span> REST API Reference
-            </h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-blue-600 hover:underline text-sm">Phone Numbers</a></li>
-              <li><a href="#" class="text-blue-600 hover:underline text-sm">Number Groups</a></li>
-            </ul>
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-2xl">🔗</span>
+                <h4 class="font-bold text-gray-900">REST API Reference</h4>
+              </div>
+              <ul class="space-y-3 text-sm">
+                <li><a href="#" class="text-blue-600 hover:underline block">Phone Numbers</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline block">Number Groups</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </transition>
       </div>
     </div>
   </DashboardLayout>
@@ -132,6 +149,7 @@ import DashboardLayout from '@/components/dashboard/DashboardLayout.vue'
 
 const isVerifying = ref(false)
 const hasVerifiedNumbers = ref(false)
+const isDocsOpen = ref(true)
 
 const form = reactive({
   number: '',
@@ -146,5 +164,14 @@ const handleCallMe = () => {
 <style scoped>
 .font-light {
   font-weight: 300;
+}
+
+/* Transition styles for docs toggle */
+.max-h-0 {
+  max-height: 0;
+  overflow: hidden;
+}
+.max-h-\[1000px\] {
+  max-height: 1000px;
 }
 </style>
