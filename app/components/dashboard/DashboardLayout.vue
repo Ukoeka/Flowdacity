@@ -170,6 +170,7 @@ const navigationItems = [
     { label: 'Verified', to: '/dashboard/phone-numbers/verified' },
     { label: 'Short Codes', to: '/dashboard/phone-numbers/shortcodes' },
     { label: 'Port Requests', to: '/dashboard/phone-numbers/port-requests' },
+    { label: 'Number Groups', to: '/dashboard/phone-numbers/number-groups' },
   ]
  },
   {
