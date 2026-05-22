@@ -168,7 +168,7 @@ const navigationItems = [
   to: '/dashboard/phone-numbers',
   children: [
     { label: 'Verified', to: '/dashboard/phone-numbers/verified' },
-    { label: 'Buy Numbers', to: '/dashboard/phone-numbers/buy' },
+    { label: 'Short Codes', to: '/dashboard/phone-numbers/shortcodes' },
   ]
  },
   {
