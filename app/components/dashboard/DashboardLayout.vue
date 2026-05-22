@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-screen bg-gray-50">
     <!-- Sidebar -->
-    <div class="w-56 bg-white border-r border-gray-200 overflow-y-auto fixed h-screen">
+    <div class="w-64 bg-white border-r border-gray-200 overflow-y-auto fixed h-screen">
       <!-- Logo -->
       <div class="p-6 border-b border-gray-200">
         <div class="flex items-center gap-2">
@@ -105,7 +105,7 @@
     </div>
 
     <!-- Main Column -->
-    <div class="ml-56 flex-1 flex flex-col">
+    <div class="ml-64 flex-1 flex flex-col">
       <!-- Top Bar -->
       <div class="bg-white border-b border-gray-200 px-8 py-4 flex items-center justify-between sticky top-0 z-10 h-20">
         <div class="flex items-center gap-3">
@@ -126,20 +126,20 @@
       <!-- Page Content Slot -->
       <div class="flex-1 overflow-y-auto">
         <slot />
-
-        <!-- Footer -->
-        <footer class="bg-gray-50 border-t border-gray-200 mt-8">
-          <div class="px-8 py-6 flex items-center justify-center gap-8 text-sm text-gray-600">
-            <a href="#" class="hover:text-gray-900">About Us</a>
-            <a href="#" class="hover:text-gray-900">API Docs</a>
-            <a href="#" class="hover:text-gray-900">Guides</a>
-            <a href="#" class="hover:text-gray-900">Legal</a>
-            <a href="#" class="hover:text-gray-900">Privacy Policy</a>
-            <a href="#" class="hover:text-gray-900">Terms of Use</a>
-            <a href="#" class="hover:text-gray-900">Cookie Policy</a>
-          </div>
-        </footer>
       </div>
+
+      <!-- Footer -->
+      <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="px-8 py-6 flex items-center justify-center gap-8 text-sm text-gray-600">
+          <a href="#" class="hover:text-gray-900">About Us</a>
+          <a href="#" class="hover:text-gray-900">API Docs</a>
+          <a href="#" class="hover:text-gray-900">Guides</a>
+          <a href="#" class="hover:text-gray-900">Legal</a>
+          <a href="#" class="hover:text-gray-900">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-900">Terms of Use</a>
+          <a href="#" class="hover:text-gray-900">Cookie Policy</a>
+        </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -163,7 +163,14 @@ const navigationItems = [
       { label: 'Recordings', to: '/dashboard/video/recordings' },
     ]
   },
-  { icon: '📱', label: 'Phone Numbers', to: '/dashboard/phone-numbers' },
+  { icon: '📱', 
+  label: 'Phone Numbers', 
+  to: '/dashboard/phone-numbers',
+  children: [
+    { label: 'Verified', to: '/dashboard/phone-numbers/verified' },
+    { label: 'Buy Numbers', to: '/dashboard/phone-numbers/buy' },
+  ]
+ },
   {
     icon: '🔄',
     label: 'Relay / SWML',
