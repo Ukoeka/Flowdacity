@@ -1,6 +1,3 @@
-This implementation covers the **E911 (Addresses)** section, featuring the "Empty State" for no existing addresses and the multi-field **New Address** form.
-
-```vue
 <template>
   <DashboardLayout>
     <div class="p-24 w-full">
