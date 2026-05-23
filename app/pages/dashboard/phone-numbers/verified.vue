@@ -1,6 +1,6 @@
 <template>
   <DashboardLayout>
-    <div class="p-8 w-full">
+    <div class="p-24 w-full">
       <h1 class="text-3xl font-light text-gray-900 mb-8">
         {{ isVerifying ? 'Verify a Phone Number' : 'Verified Caller ID' }}
       </h1>

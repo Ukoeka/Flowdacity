@@ -1,6 +1,6 @@
 <template>
   <DashboardLayout>
-    <div class="p-8 w-full  mx-auto">
+    <div class="p-24 w-full  mx-auto">
       <h1 class="text-4xl font-light text-gray-900 mb-12">
         {{ isFormActive ? 'Submit a Port Request' : 'Port Requests' }}
       </h1>

@@ -1,6 +1,6 @@
 <template>
   <DashboardLayout>
-    <div class="p-8 w-full">
+    <div class="p-24 w-full">
       <!-- Page Title -->
       <h1 class="text-4xl font-light text-gray-900 mb-16">Programmable Video Communication</h1>
 

@@ -1,6 +1,6 @@
 <template>
   <DashboardLayout>
-    <div class="p-12 w-full ">
+    <div class="p-24 w-full ">
       <h1 class="text-4xl font-light text-gray-900 mb-12">
         {{ isCreating ? 'New Number Group' : 'Number Groups' }}
       </h1>

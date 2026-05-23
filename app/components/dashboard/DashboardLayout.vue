@@ -171,6 +171,7 @@ const navigationItems = [
     { label: 'Short Codes', to: '/dashboard/phone-numbers/shortcodes' },
     { label: 'Port Requests', to: '/dashboard/phone-numbers/port-requests' },
     { label: 'Number Groups', to: '/dashboard/phone-numbers/number-groups' },
+    { label: 'Addresses', to: '/dashboard/phone-numbers/addresses' },
   ]
  },
   {
