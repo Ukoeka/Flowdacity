@@ -170,14 +170,13 @@
 import { ref } from 'vue'
 import DashboardLayout from '@/components/dashboard/DashboardLayout.vue'
 
-// State management
+
 const isApplying = ref(false)
 const hasAgreed = ref(false)
-const isDocsOpen = ref(true) // Open by default as per visual reference
+const isDocsOpen = ref(true) 
 </script>
 
 <style scoped>
-/* Standard transitions for Tailwind max-height animations */
 .max-h-0 {
   max-height: 0;
   overflow: hidden;
