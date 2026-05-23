@@ -104,7 +104,6 @@ const isDocsOpen = ref(true)
   transition-duration: 200ms;
 }
 
-/* Transition styles for docs toggle */
 .max-h-0 {
   max-height: 0;
   overflow: hidden;
