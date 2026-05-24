@@ -55,7 +55,7 @@
 
       <!-- Bottom Footer -->
       <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-sm text-gray-400">Copyright © 2026 Plivo Inc.</p>
+        <p class="text-sm text-gray-400">Copyright © 2026 Flowdacity Inc.</p>
         <div class="flex gap-4 mt-4 md:mt-0">
           <a href="#" class="text-gray-400 hover:text-white">𝕏</a>
           <a href="#" class="text-gray-400 hover:text-white">f</a>

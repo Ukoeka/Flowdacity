@@ -3,7 +3,7 @@
     <div class="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center px-4 py-8">
       <div class="w-full max-w-md">
         <div class="bg-white rounded-lg shadow-lg p-8">
-          <h1 class="text-3xl font-bold text-gray-900 mb-8 text-center">Create your Plivo Account</h1>
+          <h1 class="text-3xl font-bold text-gray-900 mb-8 text-center">Create your Flowdacity Account</h1>
 
           <!-- Form -->
           <form @submit.prevent="handleSignup" class="space-y-6">

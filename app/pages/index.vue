@@ -14,7 +14,7 @@
           </h1>
 
           <p class="text-lg text-gray-600 mb-8">
-            Plivo's voice and messaging platform enables businesses to create and deliver better customer experiences.
+            Flowdacity's voice and messaging platform enables businesses to create and deliver better customer experiences.
           </p>
 
           <div class="flex gap-4">
@@ -72,7 +72,7 @@
           <div class="text-gray-400 font-bold">Lifesize</div>
         </div>
         <p class="text-center text-green-600 mt-8 text-sm">
-          Learn how thousands of innovative businesses rely on Plivo for their customer engagement. →
+          Learn how thousands of innovative businesses rely on Flowdacity for their customer engagement. →
         </p>
       </div>
     </section>

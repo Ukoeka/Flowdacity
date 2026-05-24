@@ -6,7 +6,7 @@
         <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left: Login Form -->
           <div class="bg-white rounded-lg shadow-lg p-8 h-fit">
-            <h1 class="text-3xl font-bold text-gray-900 mb-8">Log in to your Plivo account</h1>
+            <h1 class="text-3xl font-bold text-gray-900 mb-8">Log in to your Flowdacity account</h1>
 
             <form @submit.prevent="handleLogin" class="space-y-6">
               <!-- Work Email -->
@@ -59,7 +59,7 @@
                   <a href="#" class="text-green-600 hover:text-green-700 font-semibold">Learn more →</a>
                 </div>
               </div>
-              <div class="text-sm text-gray-600 px-4">Access all Plivo products with a single login</div>
+              <div class="text-sm text-gray-600 px-4">Access all Flowdacity products with a single login</div>
             </div>
           </div>
         </div>
