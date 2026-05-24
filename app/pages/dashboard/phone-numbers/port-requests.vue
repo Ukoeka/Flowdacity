@@ -16,7 +16,7 @@
 
         <h2 class="text-2xl text-gray-800 mb-4">Port Request Form</h2>
         <p class="text-gray-400 max-w-lg mb-8 leading-relaxed">
-          Please submit your new port request using the form available within the SignalWire Support Portal. 
+          Please submit your new port request using the form available within the Flowdacity Support Portal. 
           Click the button below to open the form.
         </p>
 

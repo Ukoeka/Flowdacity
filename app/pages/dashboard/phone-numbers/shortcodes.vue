@@ -37,8 +37,8 @@
         <div class="text-gray-600 space-y-6 text-left">
           <p>
             The Short Code Application process takes approximately five (5) to seven (7) weeks to complete. 
-            SignalWire's acceptance of a Short Code Application as complete does not guarantee carrier approval. 
-            SignalWire's carriers have the sole authority to approve or reject any Short Code Application.
+            Flowdacity's acceptance of a Short Code Application as complete does not guarantee carrier approval. 
+            Flowdacity's carriers have the sole authority to approve or reject any Short Code Application.
           </p>
 
           <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">

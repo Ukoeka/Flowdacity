@@ -103,9 +103,9 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Card 1 -->
           <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-            <h3 class="text-blue-600 font-bold text-base mb-2">SignalWire Tutorials & Guides</h3>
+            <h3 class="text-blue-600 font-bold text-base mb-2">Flowdacity Tutorials & Guides</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              A collection of how-tos and resources to get you up and running on SignalWire quickly and easily.
+              A collection of how-tos and resources to get you up and running on Flowdacity quickly and easily.
             </p>
           </div>
 
@@ -121,7 +121,7 @@
           <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
             <h3 class="text-blue-600 font-bold text-base mb-2">Create an API Token</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Create an API token to programmatically connect to SignalWire and control your projects from your own servers.
+              Create an API token to programmatically connect to Flowdacity and control your projects from your own servers.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@
           <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
             <h3 class="text-blue-600 font-bold text-base mb-2">API Documentation & Server Side SDKs</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Learn how to use SignalWire's RELAY API and SDKs.
+              Learn how to use Flowdacity's RELAY API and SDKs.
             </p>
           </div>
 
@@ -144,7 +144,7 @@
           <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
             <h3 class="text-blue-600 font-bold text-base mb-2">Compatibility API Documentation</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Learn how to use SignalWire's Compatibility APIs.
+              Learn how to use Flowdacity's Compatibility APIs.
             </p>
           </div>
 
