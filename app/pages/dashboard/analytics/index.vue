@@ -128,27 +128,94 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-50 border-t border-gray-200 mt-8">
-      <div class="px-8 py-6 flex items-center justify-center gap-8 text-sm text-gray-600">
-        <a href="#" class="hover:text-gray-900">About Us</a>
-        <a href="#" class="hover:text-gray-900">API Docs</a>
-        <a href="#" class="hover:text-gray-900">Guides</a>
-        <a href="#" class="hover:text-gray-900">Legal</a>
-        <a href="#" class="hover:text-gray-900">Privacy Policy</a>
-        <a href="#" class="hover:text-gray-900">Terms of Use</a>
-        <a href="#" class="hover:text-gray-900">Cookie Policy</a>
-      </div>
-    </footer>
+    <!-- Custom Date Range Modal -->
+    <Teleport to="body">
+      <transition
+        enter-active-class="transition duration-200"
+        enter-from-class="opacity-0"
+        enter-to-class="opacity-100"
+        leave-active-class="transition duration-200"
+        leave-from-class="opacity-100"
+        leave-to-class="opacity-0"
+      >
+        <div v-if="showCustomDatePicker" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <transition
+            enter-active-class="transition duration-200"
+            enter-from-class="opacity-0 scale-95"
+            enter-to-class="opacity-100 scale-100"
+            leave-active-class="transition duration-200"
+            leave-from-class="opacity-100 scale-100"
+            leave-to-class="opacity-0 scale-95"
+          >
+            <div v-if="showCustomDatePicker" class="bg-white rounded-lg shadow-xl w-full max-w-md">
+              <!-- Modal Header -->
+              <div class="border-b border-gray-200 px-6 py-4">
+                <h2 class="text-xl font-bold text-gray-900">Select Custom Date Range</h2>
+              </div>
+
+              <!-- Modal Body -->
+              <div class="p-6 space-y-6">
+                <!-- Start Date -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-900 mb-2">Start Date</label>
+                  <div class="relative">
+                    <input
+                      v-model="customDateRange.startDate"
+                      type="date"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                </div>
+
+                <!-- End Date -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-900 mb-2">End Date</label>
+                  <div class="relative">
+                    <input
+                      v-model="customDateRange.endDate"
+                      type="date"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="space-y-3 pt-4 border-t border-gray-200">
+                  <button
+                    @click="applyCustomDateRange"
+                    class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition"
+                  >
+                    Apply Date Range
+                  </button>
+                  <button
+                    @click="cancelCustomDateRange"
+                    class="w-full px-6 py-3 border-2 border-gray-300 text-gray-900 font-semibold rounded-full hover:bg-gray-50 transition"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </transition>
+        </div>
+      </transition>
+    </Teleport>
+
+   
   </DashboardLayout>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import DashboardLayout from '@/components/dashboard/DashboardLayout.vue'
 
 const selectedPeriod = ref('7days')
 const showCustomDatePicker = ref(false)
+
+const customDateRange = ref({
+  startDate: '',
+  endDate: ''
+})
 
 const metrics = ref({
   totalCalls: '0',
@@ -159,6 +226,12 @@ const metrics = ref({
   avgPostDialDelay: '0.0s'
 })
 
+const formatDate = (dateString) => {
+  if (!dateString) return ''
+  const date = new Date(dateString)
+  return date.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' })
+}
+
 const getPeriodLabel = (period) => {
   switch (period) {
     case '7days':
@@ -168,11 +241,37 @@ const getPeriodLabel = (period) => {
     case '90days':
       return 'Last 90 days'
     case 'custom':
-      return 'Custom range'
+      return `${formatDate(customDateRange.value.startDate)} to ${formatDate(customDateRange.value.endDate)}`
     default:
       return 'Last 7 days'
   }
 }
+
+const initializeDateRange = () => {
+  // Set default dates (last 90 days)
+  const endDate = new Date()
+  const startDate = new Date()
+  startDate.setDate(startDate.getDate() - 90)
+
+  customDateRange.value.startDate = startDate.toISOString().split('T')[0]
+  customDateRange.value.endDate = endDate.toISOString().split('T')[0]
+}
+
+const applyCustomDateRange = () => {
+  if (customDateRange.value.startDate && customDateRange.value.endDate) {
+    selectedPeriod.value = 'custom'
+    showCustomDatePicker.value = false
+    // Trigger data refresh with new date range
+    // refreshAnalyticsData()
+  }
+}
+
+const cancelCustomDateRange = () => {
+  showCustomDatePicker.value = false
+}
+
+// Initialize date range on component mount
+initializeDateRange()
 </script>
 
 <style scoped>
