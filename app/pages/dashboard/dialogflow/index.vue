@@ -153,18 +153,7 @@
       </transition>
     </Teleport>
 
-    <!-- Footer -->
-    <footer class="bg-gray-50 border-t border-gray-200 mt-8">
-      <div class="px-8 py-6 flex items-center justify-center gap-8 text-sm text-gray-600">
-        <a href="#" class="hover:text-gray-900">About Us</a>
-        <a href="#" class="hover:text-gray-900">API Docs</a>
-        <a href="#" class="hover:text-gray-900">Guides</a>
-        <a href="#" class="hover:text-gray-900">Legal</a>
-        <a href="#" class="hover:text-gray-900">Privacy Policy</a>
-        <a href="#" class="hover:text-gray-900">Terms of Use</a>
-        <a href="#" class="hover:text-gray-900">Cookie Policy</a>
-      </div>
-    </footer>
+  
   </DashboardLayout>
 </template>
 
