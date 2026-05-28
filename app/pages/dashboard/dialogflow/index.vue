@@ -170,7 +170,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import DashboardLayout from '../../../components/DashboardLayout.vue'
+import DashboardLayout from '@/components/dashboard/DashboardLayout.vue'
 
 const showImportModal = ref(false)
 
