@@ -180,7 +180,7 @@
                 </label>
                 <label class="flex items-center gap-2">
                   <input type="checkbox" v-model="formData.codecs" value="H264" />
-                  <span class="text-gray-900">H264</span>
+                  <span class="text-gray-900">H2665</span>
                 </label>
               </div>
               <p class="text-xs text-gray-600 mt-2">Which codecs do you want to support. You must choose at least one.</p>
