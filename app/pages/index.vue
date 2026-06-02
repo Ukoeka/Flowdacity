@@ -12,7 +12,6 @@
           <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Connect and engage with your customers globally
           </h1>
-
           <p class="text-lg text-gray-600 mb-8">
             Flowdacity's voice and messaging platform enables businesses to create and deliver better customer experiences.
           </p>
