@@ -354,7 +354,7 @@ const activeTab = ref('overview')
 
 const tabs = [
   { id: 'overview', label: 'OVERVIEW' },
-  { id: 'features', label: 'FEARES' },
+  { id: 'features', label: 'FEATURES' },
   { id: 'coverage', label: 'COVERAGE' },
   { id: 'shortcode', label: 'SHORT CODE' },
   { id: 'tollfree', label: 'TOLL-FREE' },
