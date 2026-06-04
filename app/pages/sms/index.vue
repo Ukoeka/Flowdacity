@@ -6,7 +6,7 @@
             <!-- Sub Header with Messaging Platform Title -->
             <div class="border-b border-gray-200 bg-gray-50">
             <div class="max-w-7xl mx-auto px-8 py-4">
-                <h2 class="text-lg font-bold text-gray-900">Messaging API Platform</h2>
+                <h2 class="text-lg font-bold text-gray-900">Message API Platform</h2>
             </div>
             </div>
 
