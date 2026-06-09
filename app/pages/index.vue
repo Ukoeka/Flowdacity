@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <!-- Hero Section -->
-    <section class="bg-white py-20 px-8">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section class="bg-white py-20 px-8 h-[100vh] ">
+      <div class="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <!-- Left Content -->
         <div>
           <div class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
@@ -27,33 +27,8 @@
         </div>
 
         <!-- Right Illustration -->
-        <div class="relative h-96 lg:h-full">
-          <div class="grid grid-cols-2 gap-4 h-full">
-            <div class="bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg p-6 flex items-center justify-center">
-              <div class="text-center">
-                <div class="text-4xl mb-2">📱</div>
-                <p class="text-sm text-gray-600">SMS & Voice</p>
-              </div>
-            </div>
-            <div class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-lg p-6 flex items-center justify-center">
-              <div class="text-center">
-                <div class="text-4xl mb-2">👥</div>
-                <p class="text-sm text-gray-600">Global Reach</p>
-              </div>
-            </div>
-            <div class="bg-gradient-to-br from-green-100 to-green-50 rounded-lg p-6 flex items-center justify-center">
-              <div class="text-center">
-                <div class="text-4xl mb-2">⚡</div>
-                <p class="text-sm text-gray-600">Real-time API</p>
-              </div>
-            </div>
-            <div class="bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-lg p-6 flex items-center justify-center">
-              <div class="text-center">
-                <div class="text-4xl mb-2">🔐</div>
-                <p class="text-sm text-gray-600">Enterprise Grade</p>
-              </div>
-            </div>
-          </div>
+        <div class="relative lg:h-full">
+          <img class="w-full h-full object-cover rounded-3" src="@/assets/images/hero.png" alt="">
         </div>
       </div>
 
