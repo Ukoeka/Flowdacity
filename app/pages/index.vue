@@ -2,7 +2,7 @@
   <Layout>
     <!-- Hero Section -->
     <section class="bg-white py-20 px-8 h-[100vh] ">
-      <div class="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="w-[70%] h-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <!-- Left Content -->
         <div>
           <div class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
@@ -28,7 +28,7 @@
 
         <!-- Right Illustration -->
         <div class="relative lg:h-full">
-          <img class="w-full h-full object-cover rounded-3" src="@/assets/images/hero.png" alt="">
+          <img class="w-full h-full object-contain rounded-3" src="@/assets/images/hero.png" alt="">
         </div>
       </div>
 
