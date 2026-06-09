@@ -94,7 +94,7 @@
 
     <!-- Case Study 1: Deckers -->
     <section class="py-20 px-8 bg-gray-50">
-      <div class="max-w-7xl mx-auto">
+      <div class="w-[80%]  mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left Content -->
           <div>
@@ -111,8 +111,8 @@
             </div>
           </div>
           <!-- Right Image -->
-          <div class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg h-80 flex items-center justify-center">
-            <span class="text-white text-6xl">🏃</span>
+          <div class="  rounded-lg  flex items-center justify-center">
+            <img class="w-full h-full object-cover rounded-3" src="@/assets/images/partner.png" alt="">
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@
 
     <!-- Case Studies Grid -->
     <section class="py-20 px-8 bg-white">
-      <div class="max-w-7xl mx-auto">
+      <div class="w-[80%] mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <!-- Houst -->
           <div>

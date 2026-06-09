@@ -1,26 +1,7 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- Header Navigation -->
-    <header class="border-b border-gray-200">
-      <div class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
-        <div class="flex items-center gap-8">
-          <div class="text-2xl font-bold text-green-600">plivo</div>
-          <nav class="flex items-center gap-8">
-            <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Products</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Customers</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Developers</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Resources</a>
-            <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Pricing</a>
-          </nav>
-        </div>
-        <div class="flex items-center gap-6">
-          <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">LOG IN</a>
-          <button class="px-6 py-2 border-2 border-gray-900 text-gray-900 font-bold rounded hover:bg-gray-900 hover:text-white transition">
-            SIGN UP
-          </button>
-        </div>
-      </div>
-    </header>
+   
 
     <!-- Sub Header with Messaging Platform Title -->
     <div class="border-b border-gray-200 bg-gray-50">
