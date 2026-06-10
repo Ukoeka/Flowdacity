@@ -270,7 +270,8 @@
             <div class="lg:col-span-6 relative flex justify-center order-2 lg:order-1">
               <div class="relative w-full max-w-[540px] aspect-[4/3] bg-slate-900 text-white rounded-2xl p-8 shadow-xl flex items-center justify-center overflow-hidden border border-slate-800">
                 <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-transparent pointer-events-none"></div>
-                <span class="text-7xl drop-shadow-lg">📦</span>
+
+                  <img class="w-full h-full object-contain rounded-xl transform group-hover:scale-[1.02] transition-all duration-500 ease-out" src="@/assets/images/luxer.png" alt="">
               </div>
             </div>
             
@@ -368,7 +369,7 @@
 </template>
 
 <script setup>
-// State management parameters can be introduced smoothly here when hooking up API vectors.
+
 </script>
 
 <style scoped>
