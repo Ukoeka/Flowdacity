@@ -63,7 +63,7 @@
                 <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M11 5.882V19.24a1.955 1.955 0 01-1.084-1.76V5.882m0 0h.933m-.933 0h.933m15.988 0a2.046 2.046 0 00-1.968-1.968h-6.96m0 0h.133a2.046 2.046 0 100 4.092h-6.87a2.047 2.047 0 00-2.047 2.047v10.787a2.047 2.047 0 002.047 2.047h6.942a2.047 2.047 0 002.047-2.047V8.414m0 0h.133a2.045 2.045 0 110 4.092-.963-.712" />
                 </svg>
-                <h3 class="text-lg font-bold text-gray-900">SMS Marketing</h3>
+                <h3 class="text-lg font-bold text-gray-900">SMS Marketing and Publicity</h3>
               </div>
               <p class="text-gray-600">Engage with prospects and customers throughout their entire journey.</p>
               <a href="#" class="text-green-600 hover:text-green-700 font-medium text-sm mt-4 inline-block">Learn more →</a>
