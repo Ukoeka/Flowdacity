@@ -30,8 +30,8 @@
       <div v-show="activeTab === 'overview'" class="space-y-20">
         <div class="bg-white text-slate-700 font-sans antialiased selection:bg-green-100 selection:text-green-800">
     
-    <section class="relative overflow-hidden py-16 lg:py-20 w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section class="relative overflow-hidden py-16 lg:py-20 w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
         <div class="lg:col-span-6 text-left space-y-6">
           <h1 class="text-4xl sm:text-5xl font-semibold text-[#0B1A57] tracking-tight leading-[1.15]">
             SMS API Platform
@@ -58,7 +58,7 @@
               <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
               <span class="text-slate-500 ml-2 font-sans">POST /v1/Account/{auth_id}/Message/</span>
             </div>
-            <pre class="text-emerald-400"><code>{
+            <pre class="text-emerald-400 text-lg"><code>{
   <span class="text-sky-400">"message_id"</span>: <span class="text-amber-300">"msg_8f7a92c1"</span>,
   <span class="text-sky-400">"src"</span>: <span class="text-amber-300">"14155550100"</span>,
   <span class="text-sky-400">"dst"</span>: <span class="text-amber-300">"14155550199"</span>,
@@ -68,7 +68,7 @@
   <span class="text-sky-400">"priority"</span>: <span class="text-amber-300">"high"</span>,
   <span class="text-sky-400">"status"</span>: <span class="text-amber-300">"queued"</span>,
   <span class="text-sky-400">"schedule_at"</span>: <span class="text-amber-300">"2026-06-11T14:30:00Z"</span>,
-  <span class="text-sky-400">"callback_url"</span>: <span class="text-amber-300">"https://api.example.com/webhooks/sms"</span>,
+  <span class="text-sky-400">"callback_url"</span>: <span class="text-amber-300">"https://api.flowdacity.com/webhooks/sms"</span>,
   <span class="text-sky-400">"country"</span>: <span class="text-amber-300">"US"</span>,
   <span class="text-sky-400">"cost"</span>: <span class="text-amber-300">"0.0075"</span>,
   <span class="text-sky-400">"segments"</span>: <span class="text-amber-300">1</span>,
@@ -92,9 +92,9 @@
       </div>
     </section>
 
-    <section class="bg-slate-50/60 py-20 border-y border-slate-100">
+    <section class="bg-slate-900 rounded-xl py-20 border-y border-slate-100">
       <div class="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] mb-4">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-4">
           Enable Your App with SMS in Minutes
         </h2>
         <p class="text-slate-500 text-sm max-w-xl mx-auto mb-16">
@@ -130,9 +130,12 @@
               </span>
             </div>
             <div class="space-y-2">
-              <div class="h-2 bg-slate-100 rounded-full w-full"></div>
-              <div class="h-2 bg-slate-100 rounded-full w-5/6"></div>
-              <div class="h-2 bg-slate-100 rounded-full w-4/6"></div>
+              <div class="h-2 bg-slate-400 rounded-full w-full"></div>
+              <div class="h-2 bg-slate-400 rounded-full w-5/6"></div>
+              <div class="h-2 bg-slate-400 rounded-full w-4/6"></div>
+              <div class="h-2 bg-slate-400 rounded-full w-3/6"></div>
+              <div class="h-2 bg-slate-400 rounded-full w-2/6"></div>
+              <div class="h-2 bg-slate-400 rounded-full w-1/6"></div>
             </div>
           </div>
         </div>
@@ -176,7 +179,7 @@
     </section>
 
     <section class="bg-slate-50/40 py-20 border-t border-slate-100">
-      <div class="w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
           <div class="lg:col-span-5 space-y-4">
             <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] leading-tight tracking-tight">
@@ -200,12 +203,10 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-8 border-t border-slate-100/70">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 w-full items-center pt-8 border-t border-slate-100/70">
           <div class="lg:col-span-6 flex justify-center order-last lg:order-first">
-            <div class="w-full max-w-md bg-gradient-to-br from-slate-50 to-blue-50/30 p-8 rounded-2xl border border-slate-100 flex flex-col gap-4">
-              <div class="h-10 w-24 bg-white rounded shadow-xs border border-slate-100 flex items-center justify-center text-xs font-bold text-slate-400 font-mono">10DLC</div>
-              <div class="h-10 w-32 bg-white rounded shadow-xs border border-slate-100 flex items-center justify-center text-xs font-bold text-slate-400 font-mono self-end">SHORT CODE</div>
-              <div class="h-10 w-28 bg-white rounded shadow-xs border border-slate-100 flex items-center justify-center text-xs font-bold text-slate-400 font-mono">TOLL FREE</div>
+            <div class="w-full  bg-gradient-to-br from-slate-50 to-blue-50/30 rounded-2xl border border-slate-100">
+              <img src="@/assets/images/powerpack.png" alt="" class="w-full h-auto">
             </div>
           </div>
           <div class="lg:col-span-6 space-y-6 lg:pl-6">
@@ -665,12 +666,7 @@
       </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-50 border-t border-gray-200 mt-20">
-      <div class="w-[80%] mx-auto px-8 py-12">
-        <p class="text-center text-gray-600">© 2024 Plivo. All rights reserved.</p>
-      </div>
-    </footer>
+   
   </div>
 
 </Layout>
