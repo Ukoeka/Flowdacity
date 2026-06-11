@@ -5,7 +5,7 @@
 
     <!-- Tab Navigation -->
     <div class="border-b border-gray-200">
-      <div class="max-w-7xl mx-auto px-8">
+      <div class="w-[80%] mx-auto px-8">
         <div class="flex items-center gap-8 overflow-x-auto">
           <button
             v-for="tab in tabs"
@@ -25,19 +25,19 @@
     </div>
 
     <!-- Content Area -->
-    <main class="max-w-7xl mx-auto px-8 py-16">
+    <main class="w-[80%] mx-auto px-8 py-16">
       <!-- Overview Tab Content -->
       <div v-show="activeTab === 'overview'" class="space-y-20">
         <div class="bg-white text-slate-700 font-sans antialiased selection:bg-green-100 selection:text-green-800">
     
-    <section class="relative overflow-hidden py-16 lg:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="relative overflow-hidden py-16 lg:py-20 w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-6 text-left space-y-6">
           <h1 class="text-4xl sm:text-5xl font-semibold text-[#0B1A57] tracking-tight leading-[1.15]">
             SMS API Platform
           </h1>
           <p class="text-base sm:text-lg text-slate-500 font-normal leading-relaxed max-w-lg">
-            Programmatically send and receive text messages. Interact with your customers globally using SMS APIs.
+            Programmatically send and receive text messages at scale with powerful SMS APIs. Engage customers worldwide through transactional alerts, OTP verification, notifications, marketing campaigns, and two-way messaging—all with reliable delivery, global coverage, and real-time reporting.
           </p>
           <div class="flex flex-wrap gap-4 pt-2">
             <button class="px-6 py-3 bg-[#24B43C] hover:bg-[#1e9632] text-white font-semibold rounded text-xs tracking-wider uppercase transition duration-150 shadow-sm">
@@ -59,9 +59,20 @@
               <span class="text-slate-500 ml-2 font-sans">POST /v1/Account/{auth_id}/Message/</span>
             </div>
             <pre class="text-emerald-400"><code>{
+  <span class="text-sky-400">"message_id"</span>: <span class="text-amber-300">"msg_8f7a92c1"</span>,
   <span class="text-sky-400">"src"</span>: <span class="text-amber-300">"14155550100"</span>,
   <span class="text-sky-400">"dst"</span>: <span class="text-amber-300">"14155550199"</span>,
-  <span class="text-sky-400">"text"</span>: <span class="text-amber-300">"Hello World from SMS API!"</span>
+  <span class="text-sky-400">"text"</span>: <span class="text-amber-300">"Hello World from SMS API!"</span>,
+  <span class="text-sky-400">"type"</span>: <span class="text-amber-300">"transactional"</span>,
+  <span class="text-sky-400">"encoding"</span>: <span class="text-amber-300">"UTF-8"</span>,
+  <span class="text-sky-400">"priority"</span>: <span class="text-amber-300">"high"</span>,
+  <span class="text-sky-400">"status"</span>: <span class="text-amber-300">"queued"</span>,
+  <span class="text-sky-400">"schedule_at"</span>: <span class="text-amber-300">"2026-06-11T14:30:00Z"</span>,
+  <span class="text-sky-400">"callback_url"</span>: <span class="text-amber-300">"https://api.example.com/webhooks/sms"</span>,
+  <span class="text-sky-400">"country"</span>: <span class="text-amber-300">"US"</span>,
+  <span class="text-sky-400">"cost"</span>: <span class="text-amber-300">"0.0075"</span>,
+  <span class="text-sky-400">"segments"</span>: <span class="text-amber-300">1</span>,
+  <span class="text-sky-400">"desc"</span>: <span class="text-amber-300">"Welcome message sent to newly registered customer."</span>
 }</code></pre>
           </div>
         </div>
@@ -82,7 +93,7 @@
     </section>
 
     <section class="bg-slate-50/60 py-20 border-y border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] mb-4">
           Enable Your App with SMS in Minutes
         </h2>
@@ -107,7 +118,7 @@
       </div>
     </section>
 
-    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section class="py-20 w-[80%] mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-6 flex justify-center relative">
           <div class="absolute inset-0 bg-blue-50/40 rounded-full filter blur-3xl -z-10"></div>
@@ -165,7 +176,7 @@
     </section>
 
     <section class="bg-slate-50/40 py-20 border-t border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
           <div class="lg:col-span-5 space-y-4">
             <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] leading-tight tracking-tight">
@@ -220,7 +231,7 @@
       </div>
     </section>
 
-    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="py-20 w-[80%] mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] mb-4 max-w-2xl mx-auto leading-tight tracking-tight">
         More Ways to Send and Receive SMS Around the World
       </h2>
@@ -266,7 +277,7 @@
     </section>
 
     <section class="bg-slate-50/50 py-20 border-t border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] mb-3 tracking-tight">
           Flexible pricing model for your needs
         </h2>
@@ -299,7 +310,7 @@
       </div>
     </section>
 
-    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="py-20 w-[80%] mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] mb-16 tracking-tight">
         Top reasons why businesses choose Plivo
       </h2>
@@ -656,7 +667,7 @@
 
     <!-- Footer -->
     <footer class="bg-gray-50 border-t border-gray-200 mt-20">
-      <div class="max-w-7xl mx-auto px-8 py-12">
+      <div class="w-[80%] mx-auto px-8 py-12">
         <p class="text-center text-gray-600">© 2024 Plivo. All rights reserved.</p>
       </div>
     </footer>
