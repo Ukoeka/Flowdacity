@@ -369,300 +369,552 @@
 
       <!-- Features Tab Content -->
       <div v-show="activeTab === 'features'" class="space-y-20">
-        <!-- Hero Section -->
-        <section class="text-center py-16">
-          <h2 class="text-5xl font-bold text-gray-900 mb-4">Features - SMS API Platform</h2>
-          <p class="text-xl text-gray-600 mb-8">Powerful SMS functionality for your applications at a global scale</p>
-          <div class="flex items-center justify-center gap-4">
-            <button class="px-8 py-3 bg-blue-900 text-white font-bold rounded hover:bg-blue-800 transition">
-              GET STARTED NOW
-            </button>
-            <button class="px-8 py-3 border-2 border-gray-900 text-gray-900 font-bold rounded hover:bg-gray-900 hover:text-white transition">
-              TALK TO AN EXPERT
-            </button>
+          <div class="bg-white text-slate-700 font-sans antialiased selection:bg-green-100 selection:text-green-800">
+
+    <section class="text-center py-20 max-w-4xl mx-auto px-4 space-y-5">
+      <h1 class="text-4xl sm:text-5xl font-semibold text-[#0B1A57] tracking-tight leading-[1.15]">
+        Features - SMS API Platform
+      </h1>
+      <p class="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+        Powerful SMS functionality for your applications at a global scale. Elevate your delivery mechanics with unified developer frameworks.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <button class="px-6 py-3 bg-[#0B1A57] hover:bg-[#060e33] text-white font-semibold text-xs tracking-wider uppercase rounded transition duration-150 shadow-sm">
+          Get Started Now
+        </button>
+        <button class="px-6 py-3 border border-slate-300 text-[#0B1A57] hover:bg-slate-50 font-semibold text-xs tracking-wider uppercase rounded transition duration-150">
+          Talk to an Expert
+        </button>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-slate-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-4 space-y-4 lg:sticky lg:top-6">
+          <div class="flex items-center gap-3">
+            <h2 class="text-2xl font-semibold text-[#0B1A57] tracking-tight">Essentials</h2>
+            <div class="w-[2px] h-6 bg-slate-200"></div>
           </div>
-        </section>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed pr-4">
+            Essential features already built for you so you can focus on integrating SMS in your application & scale your delivery globally.
+          </p>
+        </div>
 
-        <!-- Essentials Section -->
-        <section>
-          <div class="flex items-start gap-4 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900">Essentials</h2>
-            <div class="w-1 h-8 bg-gray-300"></div>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Essential features -->
-            <div class="col-span-1">
-              <p class="text-gray-600 leading-relaxed">Essential features already built for you so you can focus on integrating SMS in your application & scale your delivery globally.</p>
+        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
+          
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-sky-50 text-sky-500 border border-sky-100/30">
+              <span class="text-xs font-mono font-bold tracking-tight">aa</span>
             </div>
-
-            <!-- Support for any character set -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="currentColor">aa</text>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Support for any character set</h3>
-              <p class="text-gray-600">Built in GSM & Unicode character set support to allow any language including Chinese, Arabic and others plus emojis & symbols.</p>
-            </div>
-
-            <!-- Long Message Concatenation -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" fill="none"/>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Long Message Concatenation</h3>
-              <p class="text-gray-600">No more split messages. Long messages are automatically concatenated across global networks seamlessly.</p>
-            </div>
-
-            <!-- Delivery Report Notifications -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Delivery Report Notifications</h3>
-              <p class="text-gray-600">Receive real-time delivery notification of messages sent globally. Track delivery rates and performance of your accounts.</p>
-            </div>
-
-            <!-- Message Queuing -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" fill="none"/>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Message Queuing</h3>
-              <p class="text-gray-600">Send multiple SMS in a single API request. We handle the message queuing for you so you don't have to worry about building that.</p>
-            </div>
-
-            <!-- MMS Rich-media Support -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">MMS Rich-media Support</h3>
-              <p class="text-gray-600">Send and receive photos, gifs, videos and more. Support to send and receive picture messages and SMS in the same phone number.</p>
-              <a href="#" class="text-green-600 hover:text-green-700 font-medium text-sm mt-4 inline-block">Learn More →</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Compliance Section -->
-        <section>
-          <div class="flex items-start gap-4 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900">Compliance</h2>
-            <div class="w-1 h-8 bg-gray-300"></div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Support for any character set</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Built-in GSM & Unicode character set support to allow any language including Chinese, Arabic, and others plus emojis & symbols seamlessly.
+            </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Compliance intro -->
-            <div class="col-span-1">
-              <p class="text-gray-600 leading-relaxed">Built in local, regulatory and data compliance which frees you up to build your application at scale.</p>
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-sky-50 text-sky-500">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
             </div>
-
-            <!-- Message Body Purging -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Message Body Purging</h3>
-              <p class="text-gray-600">SMS message content is never stored within any message detail record. By default all debug logs are purged after 30 days.</p>
-            </div>
-
-            <!-- Protect Sensitive Data -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Protect Sensitive Data</h3>
-              <p class="text-gray-600">Hospitals and other regulated industries use Plivo globally. Disable logging and mask phone numbers to protect for such use cases.</p>
-            </div>
-
-            <!-- Smart Rate Limiting -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Smart Rate Limiting</h3>
-              <p class="text-gray-600">Stay compliant with messaging frequency and throughput regulations per source number in each country.</p>
-            </div>
-
-            <!-- Automatic Opt-out Handling -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Automatic Opt-out Handling</h3>
-              <p class="text-gray-600">Replies such as "Stop", "Cancel" are automatically handled for you on long codes. Plivo manages the opt-outs in such cases.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Improved Message Delivery Section -->
-        <section>
-          <div class="flex items-start gap-4 mb-12">
-            <h2 class="text-3xl font-bold text-gray-900">Improved<br/>Message Delivery</h2>
-            <div class="w-1 h-8 bg-gray-300"></div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Long Message Concatenation</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              No more split messages. Long text contents are automatically concatenated across global telecom networks natively.
+            </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Delivery intro -->
-            <div class="col-span-1">
-              <p class="text-gray-600 leading-relaxed">Quality based routing engine and other features to ensure the best deliverability across 200 countries.</p>
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-sky-50 text-sky-500">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Delivery Report Notifications</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Receive real-time delivery notification of messages sent globally. Track performance and network status logs instantly.
+            </p>
+          </div>
 
-            <!-- Intelligent Message Encoding -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" fill="none"/>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Intelligent Message Encoding</h3>
-              <p class="text-gray-600">Plivo replaces unicode characters with similar gsm characters to ensure message delivery to destination networks that don't support unicode.</p>
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-sky-50 text-sky-500">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
             </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Message Queuing</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Send multiple SMS in a single API request call. We manage concurrent processing tasks so your microservices stay clean.
+            </p>
+          </div>
 
-            <!-- Number Pooling -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" fill="none"/>
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Number Pooling</h3>
-              <p class="text-gray-600">Improve delivery rate by spreading your messages across a pool of phone numbers to reach your users in time.</p>
+          <div class="space-y-3 sm:col-span-2 bg-slate-50/50 p-5 rounded-xl border border-slate-100">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-sky-50 text-sky-500">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
             </div>
-
-            <!-- Conversion API -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Conversion API</h3>
-              <p class="text-gray-600">Real time feedback from your application allows Plivo's self adjusting quality based routing engine to ensures best delivery.</p>
-            </div>
-
-            <!-- Local Match -->
-            <div>
-              <div class="flex items-start gap-3 mb-4">
-                <svg class="w-8 h-8 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Local Match</h3>
-              <p class="text-gray-600">To improve read rates, auto select a local area number as the sender id for each user from a pool of numbers.</p>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">MMS Rich-media Support</h3>
+            <p class="text-xs text-slate-500 leading-relaxed max-w-xl">
+              Send and receive photos, gifs, videos and more. Support to dispatch high-fidelity picture files along with structured standard text blocks using the same endpoints.
+            </p>
+            <div class="pt-1">
+              <a href="#" class="inline-flex items-center text-xs font-bold text-[#24B43C] hover:underline gap-0.5">
+                Learn More <span>&rarr;</span>
+              </a>
             </div>
           </div>
-        </section>
 
-        <!-- Faster Time to Market Section -->
-        <section class="py-16">
-          <h2 class="text-4xl font-bold text-gray-900 text-center mb-4">Faster Time to Market</h2>
-          <p class="text-center text-gray-600 max-w-3xl mx-auto mb-16">Build, Integrate and troubleshoot issues faster. With Plivo focus on building the features that differentiates you and be faster to the market.</p>
+        </div>
+      </div>
+    </section>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <!-- Left side - Features list -->
-            <div class="space-y-6">
-              <div class="flex items-start gap-4">
-                <svg class="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">Sticky Sender</h3>
-                  <p class="text-gray-600">Interact with customers using the same recognizable phone number or sender ID to ensure a better experience.</p>
-                </div>
-              </div>
+    <section class="py-16 border-t border-slate-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-4 space-y-4 lg:sticky lg:top-6">
+          <div class="flex items-center gap-3">
+            <h2 class="text-2xl font-semibold text-[#0B1A57] tracking-tight">Compliance</h2>
+            <div class="w-[2px] h-6 bg-slate-200"></div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed pr-4">
+            Built-in local, regulatory, and explicit global security standards that liberate your team to launch fast.
+          </p>
+        </div>
 
-              <div class="flex items-start gap-4">
-                <svg class="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">Built in Multi-tenancy</h3>
-                  <p class="text-gray-600">Segment your customers based on use case, spend capacity or risk profile and track usage and billing with Sub-Accounts.</p>
-                </div>
-              </div>
+        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
+          
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-emerald-50 text-[#24B43C]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Message Body Purging</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              SMS message content is never permanently stored within transactional log repositories. All system request records purge natively within 30 days.
+            </p>
+          </div>
 
-              <div class="flex items-start gap-4">
-                <svg class="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">Detailed Debug Logs</h3>
-                  <p class="text-gray-600">Debug and troubleshoot issues and problems faster with detailed logs. Drill down to the details to find the root cause.</p>
-                </div>
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-emerald-50 text-[#24B43C]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2zM14 11V7a2 2 0 00-4 0v4h4z" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Protect Sensitive Data</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Regulated healthcare platforms rely heavily on our isolated environments. Safely disable debug tracking or mask user telephone numbers dynamically.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-emerald-50 text-[#24B43C]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Smart Rate Limiting</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Stay fully compliant with localized volume thresholds and carrier rules automatically enforced across individual destination endpoints.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-emerald-50 text-[#24B43C]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Automatic Opt-out Handling</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              System intent handlers safely intercept matching inbound keywords like "STOP" or "CANCEL" to manage blocking matrices systematically.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-slate-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-4 space-y-4 lg:sticky lg:top-6">
+          <div class="flex items-center gap-3">
+            <h2 class="text-2xl font-semibold text-[#0B1A57] tracking-tight">Improved Message Delivery</h2>
+            <div class="w-[2px] h-12 bg-slate-200"></div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed pr-4">
+            Quality-based carrier routing engine optimizations ensuring top tier transactional deliverability across international networks.
+          </p>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
+          
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Intelligent Message Encoding</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              We intercept unsupported Unicode text streams and adapt matching fallback characters to guarantee delivery across non-compliant target destinations.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Number Pooling</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Distribute outward delivery volumes flawlessly among automated sets of phone numbers to avoid packet traffic blockages.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Conversion API</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Real-time programmatic system checks continually direct alternative messaging routes for sustained system performance.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-amber-50 text-amber-600">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Local Match</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Optimize response levels by dynamically serving regional outbound codes aligned directly with your recipient context.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 border-t border-slate-100 bg-slate-50/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <h2 class="text-3xl font-semibold text-[#0B1A57] tracking-tight">Faster Time to Market</h2>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            Build, integrate, and troubleshoot connection interfaces rapidly. Focus execution cycles exclusively on shipping native application value.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-6xl mx-auto">
+          
+          <div class="lg:col-span-6 space-y-8">
+            <div class="flex items-start gap-4">
+              <div class="mt-1 flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-sky-100 text-sky-600 text-xs font-bold">&checkmark;</div>
+              <div class="space-y-1">
+                <h3 class="text-sm font-semibold text-[#0B1A57]">Sticky Sender</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Interact with consumers using the same recognizable phone layout identity over continuous session channels.</p>
               </div>
             </div>
 
-            <!-- Right side - Illustration and more features -->
-            <div class="space-y-6">
-              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 h-64 flex items-center justify-center">
-                <p class="text-gray-500 text-center">Developer Tools Illustration</p>
+            <div class="flex items-start gap-4">
+              <div class="mt-1 flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-sky-100 text-sky-600 text-xs font-bold">&checkmark;</div>
+              <div class="space-y-1">
+                <h3 class="text-sm font-semibold text-[#0B1A57]">Built in Multi-tenancy</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Segment customer nodes based on active data scope, volume parameters, or profile configurations with sub-accounts.</p>
               </div>
+            </div>
 
-              <div class="flex items-start gap-4">
-                <svg class="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">Extensive Documentation</h3>
-                  <p class="text-gray-600">With our detailed documentation and sample code get started in minutes. Just copy paste code samples in most cases.</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4">
-                <svg class="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">Server Side SDKs</h3>
-                  <p class="text-gray-600">Program in your web language of choice with our server side SDKs in Java, C#, Python, Ruby, Nodejs or Golang.</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4">
-                <svg class="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">Reusable Templates</h3>
-                  <p class="text-gray-600">With a vast library of ready to use templates you can add powerful functionality quickly by writing minimal code.</p>
-                </div>
+            <div class="flex items-start gap-4">
+              <div class="mt-1 flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-sky-100 text-sky-600 text-xs font-bold">&checkmark;</div>
+              <div class="space-y-1">
+                <h3 class="text-sm font-semibold text-[#0B1A57]">Detailed Debug Logs</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Isolate gateway delivery glitches quickly using descriptive console request traces built straight inside your view models.</p>
               </div>
             </div>
           </div>
-        </section>
 
-        <!-- CTA Section -->
-        <section class="text-center py-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">It's easy to get started. Sign up for free.</h2>
-          <p class="text-gray-600 mb-8">Create your account and receive trial credits or get in touch with us</p>
-          <div class="flex items-center justify-center gap-4">
-            <button class="px-8 py-3 bg-green-600 text-white font-bold rounded hover:bg-green-700 transition">
-              GET STARTED NOW
-            </button>
-            <button class="px-8 py-3 border-2 border-green-600 text-green-600 font-bold rounded hover:bg-green-600 hover:text-white transition">
-              TALK TO AN EXPERT
-            </button>
+          <div class="lg:col-span-6 space-y-8">
+            <div class="bg-slate-900 rounded-xl p-6 shadow-xl border border-slate-800 font-mono text-[11px] text-slate-400 space-y-2">
+              <div class="text-slate-500 text-xs font-sans pb-2 border-b border-slate-800 flex items-center justify-between">
+                <span>SDK Core Controller</span>
+                <span class="text-emerald-400">v3.4.1</span>
+              </div>
+              <div><span class="text-purple-400">import</span> plivo <span class="text-purple-400">from</span> <span class="text-emerald-400">'@plivo/sdk'</span>;</div>
+              <div><span class="text-purple-400">const</span> client = <span class="text-purple-400">new</span> plivo.<span class="text-sky-400">Client</span>(process.env.AUTH_ID);</div>
+              <div class="text-slate-500 pt-1">// Dispatched instantly via localized edge clusters</div>
+              <div>client.messages.<span class="text-sky-400">create</span>({ src: <span class="text-amber-300">'10DLC'</span>, text: <span class="text-amber-300">'Verified'</span> });</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+              <div class="space-y-1">
+                <h4 class="text-xs font-bold text-[#0B1A57] uppercase tracking-wide">Extensive Docs</h4>
+                <p class="text-[11px] text-slate-500 leading-relaxed">Deploy templates into runtime applications smoothly using ready-made boilerplate configurations.</p>
+              </div>
+              <div class="space-y-1">
+                <h4 class="text-xs font-bold text-[#0B1A57] uppercase tracking-wide">Server Side SDKs</h4>
+                <p class="text-[11px] text-slate-500 leading-relaxed">Full environment integrations configured naturally for Node.js, Python, Ruby, Go, Java, and C#.</p>
+              </div>
+            </div>
           </div>
-        </section>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-900 text-white py-16 text-center rounded-2xl max-w-6xl mx-auto my-16 px-6 shadow-xl relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-950/40 via-transparent to-transparent pointer-events-none"></div>
+      
+      <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-white">
+          It's easy to get started. Sign up for free.
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm font-normal">
+          Create your account and receive trial credits or get in touch with our solutions engineers.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <button class="px-6 py-3 bg-[#24B43C] hover:bg-[#1e9632] text-white font-semibold text-xs tracking-wider uppercase rounded transition duration-150 shadow-md shadow-emerald-950/50">
+            GET STARTED NOW
+          </button>
+          <button class="px-6 py-3 border border-slate-700 text-slate-200 hover:text-white hover:bg-slate-800 font-semibold text-xs tracking-wider uppercase rounded transition duration-150">
+            TALK TO AN EXPERT
+          </button>
+        </div>
+      </div>
+    </section>
+
+    </div>
+      </div>
+      <div v-show="activeTab === 'shortcode'" class="space-y-20">
+  <div class="bg-white text-gray-700 font-sans antialiased selection:bg-blue-100">
+
+    <section class="text-center py-16 max-w-4xl mx-auto px-4">
+      <h2 class="text-5xl font-bold text-gray-900 mb-4">Short Code</h2>
+      <p class="text-xl text-gray-600 mb-8">Send messages at high throughput volumes globally using a 5 or 6 digit number.</p>
+      <div class="flex items-center justify-center gap-4">
+        <button class="px-8 py-3 bg-blue-900 text-white font-bold rounded hover:bg-blue-800 transition">
+          GET STARTED NOW
+        </button>
+        <button class="px-8 py-3 border-2 border-gray-900 text-gray-900 font-bold rounded hover:bg-gray-900 hover:text-white transition">
+          TALK TO AN EXPERT
+        </button>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-200 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-4">
+            <h2 class="text-3xl font-bold text-gray-900 leading-tight">Random vs Vanity<br/>Short Codes</h2>
+            <div class="w-1 h-12 bg-gray-300 hidden lg:block"></div>
+          </div>
+          <p class="text-gray-500 text-sm">Choose the provisioning approach that aligns with your campaign goals.</p>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-900">Random Short Code</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              A 5 or 6 digit number that is assigned to you randomly by wireless carriers. This is best suited for shipping notifications, two-factor authentication, or general alerts.
+            </p>
+            <div class="pt-2">
+              <span class="text-[10px] font-mono font-bold tracking-wider text-gray-400 block mb-1">EXAMPLE</span>
+              <span class="text-2xl font-mono font-bold bg-gray-100 px-4 py-1.5 rounded text-gray-900 inline-block">84345</span>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-900">Vanity Short Code</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+              A 5 or 6 digit number that you specifically choose. You can choose a number that represents your brand or is easy for your customers to remember for marketing campaigns.
+            </p>
+            <div class="pt-2">
+              <span class="text-[10px] font-mono font-bold tracking-wider text-gray-400 block mb-1">EXAMPLE</span>
+              <span class="text-2xl font-mono font-bold bg-green-50 border border-green-200 px-4 py-1.5 rounded text-green-700 inline-block">77777</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-200 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-4">
+          <div class="flex items-start gap-4">
+            <h2 class="text-3xl font-bold text-gray-900 leading-tight">Benefits of Dedicated<br/>Short Code</h2>
+            <div class="w-1 h-12 bg-gray-300 hidden lg:block"></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-gray-900">High Throughput Rate</h3>
+            <p class="text-gray-600 text-sm">Send massive amounts of messages instantly. Short codes are approved by wireless carriers for high volume throughput up to 100 messages per second by default.</p>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-gray-900">Higher Open Rates</h3>
+            <p class="text-gray-600 text-sm">Short codes are easy to remember, which builds trust with consumers and improves interaction metrics and read rates significantly over long codes.</p>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-gray-900">Two-Way Messaging</h3>
+            <p class="text-gray-600 text-sm">Receive replies and handle customer responses seamlessly. Perfect for marketing keywords like text "JOIN" to get automatic updates.</p>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-gray-900">Carrier Approved</h3>
+            <p class="text-gray-600 text-sm">Short codes are individually pre-registered and provisioned with carriers, shielding your marketing campaigns against spam filtration algorithms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-200 bg-gray-50/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Industries Using Short Codes</h2>
+          <p class="text-gray-600 text-sm mt-2">Discover how different sectors leverage high-volume text streams effectively.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm space-y-3">
+            <div class="w-10 h-10 bg-blue-50 text-blue-900 rounded flex items-center justify-center font-bold">🛒</div>
+            <h3 class="text-lg font-bold text-gray-900">Retail & E-commerce</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Flash sales, personalized discount vouchers, cart abandonment recovery alerts, and real-time delivery status tracking messages.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm space-y-3">
+            <div class="w-10 h-10 bg-blue-50 text-blue-900 rounded flex items-center justify-center font-bold">🏦</div>
+            <h3 class="text-lg font-bold text-gray-900">Banking & Finance</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Instant multi-factor validation tokens (OTP), fraud detection warning flags, balance updates, and immediate transaction logs.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm space-y-3">
+            <div class="w-10 h-10 bg-blue-50 text-blue-900 rounded flex items-center justify-center font-bold">📦</div>
+            <h3 class="text-lg font-bold text-gray-900">Logistics & Delivery</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Driver-to-customer notification triggers, localized drop-off completion notices, and instant verification signature requests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-200 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Transparent Short Code Pricing</h2>
+        <p class="text-gray-600 text-sm mt-2">Clear lease and setup fee structures with no hidden maintenance surcharges.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="border border-gray-200 rounded-xl p-8 bg-white shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-900">Random Short Code Lease</h3>
+            <p class="text-gray-500 text-xs">Assigned dynamically by wireless carrier systems.</p>
+            <div class="py-4 border-y border-gray-100">
+              <span class="text-4xl font-bold text-gray-900">$500</span>
+              <span class="text-gray-500 text-sm font-medium"> / month</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-gray-600 pt-2">
+              <li class="flex items-center gap-2"><span class="text-blue-900 font-bold">&checkmark;</span> $500 Carrier setup setup fee</li>
+              <li class="flex items-center gap-2"><span class="text-blue-900 font-bold">&checkmark;</span> 3-6 weeks provisioning baseline</li>
+              <li class="flex items-center gap-2"><span class="text-blue-900 font-bold">&checkmark;</span> Dedicated application routing loops</li>
+            </ul>
+          </div>
+          <button class="w-full mt-8 py-3 border border-gray-900 text-gray-900 font-bold rounded hover:bg-gray-900 hover:text-white transition text-xs uppercase tracking-wider">Lease Random Code</button>
+        </div>
+
+        <div class="border-2 border-blue-900 rounded-xl p-8 bg-white shadow-md flex flex-col justify-between relative">
+          <div class="absolute -top-3 left-1/3 right-1/3 bg-blue-900 text-white text-[10px] font-bold uppercase tracking-widest py-1 rounded-full text-center">Most Popular</div>
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-gray-900">Vanity Short Code Lease</h3>
+            <p class="text-gray-500 text-xs">Custom picked specific number combinations.</p>
+            <div class="py-4 border-y border-gray-100">
+              <span class="text-4xl font-bold text-gray-900">$1,000</span>
+              <span class="text-gray-500 text-sm font-medium"> / month</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-gray-600 pt-2">
+              <li class="flex items-center gap-2"><span class="text-blue-900 font-bold">&checkmark;</span> $500 Carrier setup setup fee</li>
+              <li class="flex items-center gap-2"><span class="text-blue-900 font-bold">&checkmark;</span> Choose custom matching strings</li>
+              <li class="flex items-center gap-2"><span class="text-blue-900 font-bold">&checkmark;</span> Maximum consumer recall visibility</li>
+            </ul>
+          </div>
+          <button class="w-full mt-8 py-3 bg-blue-900 text-white font-bold rounded hover:bg-blue-800 transition text-xs uppercase tracking-wider">Lease Vanity Code</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-200 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4">
+        <div class="text-center mb-10 space-y-2">
+          <h2 class="text-3xl font-bold text-gray-900">Apply for a Dedicated Short Code</h2>
+          <p class="text-gray-600 text-sm">Fill out your messaging use case and our provisioning team will handle carrier registry execution.</p>
+        </div>
+
+        <form @submit.prevent class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-gray-700 uppercase tracking-wide">First Name</label>
+              <input type="text" placeholder="John" class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-blue-900 transition" />
+            </div>
+            <div class="space-y-1.5">
+              <label class="text-xs font-bold text-gray-700 uppercase tracking-wide">Last Name</label>
+              <input type="text" placeholder="Doe" class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-blue-900 transition" />
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-xs font-bold text-gray-700 uppercase tracking-wide">Business Email</label>
+            <input type="email" placeholder="john@company.com" class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-blue-900 transition" />
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-xs font-bold text-gray-700 uppercase tracking-wide">Short Code Type Preferred</label>
+            <select class="w-full border border-gray-300 rounded bg-white px-4 py-2.5 text-sm focus:outline-none focus:border-blue-900 transition">
+              <option>Random Short Code ($500/mo)</option>
+              <option>Vanity Short Code ($1,000/mo)</option>
+            </select>
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-xs font-bold text-gray-700 uppercase tracking-wide">Estimated Monthly Volume</label>
+            <input type="text" placeholder="e.g., 500,000 messages/mo" class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-blue-900 transition" />
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-xs font-bold text-gray-700 uppercase tracking-wide">Brief Campaign Description</label>
+            <textarea rows="4" placeholder="Describe how end-users opt-in and what type of alert tokens or marketing updates you plan to distribute..." class="w-full border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-blue-900 transition"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded transition text-xs uppercase tracking-wider shadow-sm">
+            Submit Provisioning Request
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="text-center py-16 max-w-5xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">It's easy to get started. Sign up for free.</h2>
+      <p class="text-gray-600 mb-8">Create your account and receive trial credits or get in touch with us</p>
+      <div class="flex items-center justify-center gap-4">
+        <button class="px-8 py-3 bg-green-600 text-white font-bold rounded hover:bg-green-700 transition">
+          GET STARTED NOW
+        </button>
+        <button class="px-8 py-3 border-2 border-green-600 text-green-600 font-bold rounded hover:bg-green-600 hover:text-white transition">
+          TALK TO AN EXPERT
+        </button>
+      </div>
+    </section>
+
+    </div>
       </div>
     </main>
 
