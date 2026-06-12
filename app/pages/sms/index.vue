@@ -649,7 +649,7 @@
                 <span>SDK Core Controller</span>
                 <span class="text-emerald-400">v3.4.1</span>
               </div>
-              <div><span class="text-purple-400">import</span> plivo <span class="text-purple-400">from</span> <span class="text-emerald-400">'@plivo/sdk'</span>;</div>
+              <div><span class="text-purple-400">import</span> Flowdacity <span class="text-purple-400">from</span> <span class="text-emerald-400">'@plivo/sdk'</span>;</div>
               <div><span class="text-purple-400">const</span> client = <span class="text-purple-400">new</span> plivo.<span class="text-sky-400">Client</span>(process.env.AUTH_ID);</div>
               <div class="text-slate-500 pt-1">// Dispatched instantly via localized edge clusters</div>
               <div>client.messages.<span class="text-sky-400">create</span>({ src: <span class="text-amber-300">'10DLC'</span>, text: <span class="text-amber-300">'Verified'</span> });</div>
