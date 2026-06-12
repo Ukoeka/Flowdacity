@@ -87,7 +87,7 @@
           <span class="text-xl font-light text-slate-700 tracking-tight">Wix</span>
         </div>
         <p class="text-center text-xs font-semibold text-[#24B43C] mt-10 hover:underline cursor-pointer tracking-wide uppercase flex items-center justify-center gap-1">
-          Learn how thousands of innovative businesses rely on Plivo for customer engagement <span>&rarr;</span>
+          Learn how thousands of innovative businesses rely on Flowdacity for customer engagement <span>&rarr;</span>
         </p>
       </div>
     </section>
@@ -313,7 +313,7 @@
 
     <section class="py-20 w-[80%] mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl sm:text-3xl font-semibold text-[#0B1A57] mb-16 tracking-tight">
-        Top reasons why businesses choose Plivo
+        Top reasons why businesses choose Flowdacity
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 text-left max-w-5xl mx-auto">
@@ -325,7 +325,7 @@
         <div class="space-y-2 border-l-2 border-slate-100 pl-4">
           <div class="text-[#24B43C] text-md">⚙️</div>
           <h3 class="text-base font-semibold text-slate-800">Enterprise Grade Platform</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Engineered for high availability, extreme reliability and 99.95% uptime SLA. Privacy Shield and GDPR Compliance means any business can trust Plivo with data privacy and security.</p>
+          <p class="text-xs text-slate-500 leading-relaxed">Engineered for high availability, extreme reliability and 99.95% uptime SLA. Privacy Shield and GDPR Compliance means any business can trust Flowdacity with data privacy and security.</p>
         </div>
         <div class="space-y-2 border-l-2 border-slate-100 pl-4">
           <div class="text-[#24B43C] text-md">🎧</div>
@@ -649,8 +649,8 @@
                 <span>SDK Core Controller</span>
                 <span class="text-emerald-400">v3.4.1</span>
               </div>
-              <div><span class="text-purple-400">import</span> Flowdacity <span class="text-purple-400">from</span> <span class="text-emerald-400">'@plivo/sdk'</span>;</div>
-              <div><span class="text-purple-400">const</span> client = <span class="text-purple-400">new</span> plivo.<span class="text-sky-400">Client</span>(process.env.AUTH_ID);</div>
+              <div><span class="text-purple-400">import</span> Flowdacity <span class="text-purple-400">from</span> <span class="text-emerald-400">'@Flowdacity/sdk'</span>;</div>
+              <div><span class="text-purple-400">const</span> client = <span class="text-purple-400">new</span> Flowdacity.<span class="text-sky-400">Client</span>(process.env.AUTH_ID);</div>
               <div class="text-slate-500 pt-1">// Dispatched instantly via localized edge clusters</div>
               <div>client.messages.<span class="text-sky-400">create</span>({ src: <span class="text-amber-300">'10DLC'</span>, text: <span class="text-amber-300">'Verified'</span> });</div>
             </div>
