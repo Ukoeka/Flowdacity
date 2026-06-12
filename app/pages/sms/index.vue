@@ -683,7 +683,7 @@
         </p>
         <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
           <button class="px-6 py-3 bg-[#24B43C] hover:bg-[#1e9632] text-white font-semibold text-xs tracking-wider uppercase rounded transition duration-150 shadow-md shadow-emerald-950/50">
-            GET STARTED NOW
+            GET STARTED 
           </button>
           <button class="px-6 py-3 border border-slate-700 text-slate-200 hover:text-white hover:bg-slate-800 font-semibold text-xs tracking-wider uppercase rounded transition duration-150">
             TALK TO AN EXPERT
