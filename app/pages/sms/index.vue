@@ -679,7 +679,7 @@
           It's easy to get started. Sign up for free.
         </h2>
         <p class="text-slate-400 text-xs sm:text-sm font-normal">
-          Create your account and receive trial credits or get in touch with our solutions engineers.
+          Create your account and receive trial credits or get in touch with our solutions engineers today.
         </p>
         <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
           <button class="px-6 py-3 bg-[#24B43C] hover:bg-[#1e9632] text-white font-semibold text-xs tracking-wider uppercase rounded transition duration-150 shadow-md shadow-emerald-950/50">
