@@ -546,7 +546,7 @@
             <div class="w-[2px] h-12 bg-slate-200"></div>
           </div>
           <p class="text-xs sm:text-sm text-slate-500 leading-relaxed pr-4">
-            Quality-based carrier routing engine optimizations ensuring top tier transactional deliverability across international networks.
+            Quality-based carrier routing engine optimizations ensuring top transactional deliverability across international networks.
           </p>
         </div>
 
