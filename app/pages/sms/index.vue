@@ -479,7 +479,7 @@
             <div class="w-[2px] h-6 bg-slate-200"></div>
           </div>
           <p class="text-xs sm:text-sm text-slate-500 leading-relaxed pr-4">
-            Built-in local, regulatory, and explicit global security standards that liberate your team to launch fast.
+            Built-in local, regulatory, and explicit global security standards that liberate your team to launch faster.
           </p>
         </div>
 
