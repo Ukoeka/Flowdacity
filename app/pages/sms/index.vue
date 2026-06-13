@@ -611,7 +611,7 @@
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <h2 class="text-3xl font-semibold text-[#0B1A57] tracking-tight">Faster Time to Market</h2>
           <p class="text-sm text-slate-500 leading-relaxed">
-            Build, integrate, and troubleshoot connection interfaces rapidly. Focus execution cycles exclusively on shipping native application value.
+            Build, integrate, and troubleshoot connection interfaces rapidly. Focus execution cycles  on shipping native application value.
           </p>
         </div>
 
