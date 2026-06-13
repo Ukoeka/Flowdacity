@@ -409,7 +409,7 @@
             </div>
             <h3 class="text-sm font-semibold text-[#0B1A57]">Support for any character set</h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              Built-in GSM & Unicode character set support to allow any language including Chinese, Arabic, and others plus emojis & symbols seamlessly.
+              Built-in GSM & Unicode character set support to allow any language including Chinese, Arabic, French and others plus emojis & symbols seamlessly.
             </p>
           </div>
 
