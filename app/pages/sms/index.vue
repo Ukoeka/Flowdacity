@@ -407,7 +407,7 @@
             <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-sky-50 text-sky-500 border border-sky-100/30">
               <span class="text-xs font-mono font-bold tracking-tight">aa</span>
             </div>
-            <h3 class="text-sm font-semibold text-[#0B1A57]">Support for any character set</h3>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Support for set</h3>
             <p class="text-xs text-slate-500 leading-relaxed">
               Built-in GSM & Unicode character set support to allow any language including
             </p>
@@ -419,7 +419,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </div>
-            <h3 class="text-sm font-semibold text-[#0B1A57]">Long Message Concatenation</h3>
+            <h3 class="text-sm font-semibold text-[#0B1A57]">Long Message nation</h3>
             <p class="text-xs text-slate-500 leading-relaxed">
               No more split messages. Long text contents are automatically concatenated across global telecom networks natively.
             </p>
